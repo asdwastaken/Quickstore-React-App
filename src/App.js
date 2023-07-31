@@ -1,13 +1,25 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import RoutesComp from './RoutesComp';
 
 
 function App() {
 
 
   return (
-    <div className="App">
+    <BrowserRouter>
+      <div className="App">
+        <header>
+          <Navigation />
+        </header>
 
-    </div>
+        <main>
+          <RoutesComp />
+        </main>
+
+      </div>
+    </BrowserRouter>
   );
 }
 
