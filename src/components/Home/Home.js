@@ -2,9 +2,10 @@ import './home.css';
 import shoesBlue from '../../images/jordan-blue.png';
 import shoesRed from '../../images/jordan-red.png';
 import { getAll } from '../../services/sneakerServices/sneakerService';
-import { useEffect,useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import { sneakerContext } from '../../context/sneakersContext';
 import HomeMenus from './HomeMenus';
+import HomeProductsGrid from './HomeProductsGrid';
 
 export default function Home() {
 
@@ -30,7 +31,7 @@ export default function Home() {
                 </div>
 
                 <HomeMenus />
-
+                <HomeProductsGrid />
             </div >
         </div >
     )
