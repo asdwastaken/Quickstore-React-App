@@ -18,7 +18,7 @@ export default function HomeProductsGrid() {
                             <h4 className="card-brand">{x.brand_name}</h4>
                             <h5 className="card-title">{x.name}</h5>
                             <p className="card-price">Price: ${x.price / 100}</p>
-                            <a className="btn btn-primary">Add To Cart</a>
+                            <a className="add-btn">Add To Cart</a>
                         </div>
                     </div>
                 )
