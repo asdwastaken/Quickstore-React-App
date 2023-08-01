@@ -12,7 +12,7 @@ export default function HomeProductsGrid() {
         <div className="home-products-grid-container">
             {sneakers.map(x => {
                 return (
-                    <div className="card">
+                    <div className="card" key={x.id}>
                         <img src={x.main_picture_url} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h4 className="card-brand">{x.silhouette}</h4>

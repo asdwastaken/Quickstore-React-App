@@ -148,9 +148,11 @@ export default function HomeMenus() {
                 <div className="sort-container">
                     <span>Sort</span>
                     <select className="form-select">
-                        <option selected>Relevance</option>
+                        <option>Relevance</option>
                         <option value="price-ascending">Lowest Price</option>
                         <option value="price-descending">Highest Price</option>
+                        <option value="alphabetical-ascending">Alphabetical A-Z</option>
+                        <option value="alphabetical-descending">Alphabetical Z-A</option>
                         <option value="rating">Rating</option>
                     </select>
                 </div>
