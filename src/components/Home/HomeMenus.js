@@ -6,7 +6,9 @@ export default function HomeMenus() {
 
     const { sneakers,
         sneakersFormValues,
-        onChangeHandler, } = useContext(sneakerContext);
+        onBrandChangeHandler,
+        onSortChangeHandler,
+        selectedOption } = useContext(sneakerContext);
 
     return (
         <div className="home-products-container">
@@ -25,25 +27,25 @@ export default function HomeMenus() {
                                 <a className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Brand</a>
                                 <ul className="dropdown-menu">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.nike} onChange={onChangeHandler} name="nike" />
+                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.nike} onChange={onBrandChangeHandler} name="nike" />
                                         <label className="form-check-label" htmlFor="nike">
                                             Nike
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.adidas} onChange={onChangeHandler} name="adidas" />
+                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.adidas} onChange={onBrandChangeHandler} name="adidas" />
                                         <label className="form-check-label" htmlFor="adidas">
                                             Adidas
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.jordan} onChange={onChangeHandler} name="jordan" />
+                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.jordan} onChange={onBrandChangeHandler} name="jordan" />
                                         <label className="form-check-label" htmlFor="jordan">
                                             Air Jordan
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.vans} onChange={onChangeHandler} name="vans" />
+                                        <input className="form-check-input" type="checkbox" value={!sneakersFormValues.vans} onChange={onBrandChangeHandler} name="vans" />
                                         <label className="form-check-label" htmlFor="vans">
                                             Vans
                                         </label>
@@ -147,8 +149,8 @@ export default function HomeMenus() {
 
                 <div className="sort-container">
                     <span>Sort</span>
-                    <select className="form-select">
-                        <option>Relevance</option>
+                    <select className="form-select" value={selectedOption} onChange={onSortChangeHandler}>
+                        <option value="relevance">Relevance</option>
                         <option value="price-ascending">Lowest Price</option>
                         <option value="price-descending">Highest Price</option>
                         <option value="alphabetical-ascending">Alphabetical A-Z</option>

@@ -15,9 +15,9 @@ export default function HomeProductsGrid() {
                     <div className="card" key={x.id}>
                         <img src={x.main_picture_url} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h4 className="card-brand">{x.silhouette}</h4>
+                            <h4 className="card-brand">{x.brand_name}</h4>
                             <h5 className="card-title">{x.name}</h5>
-                            <p className="card-price">Price: ${x.retail_price_cents / 100}</p>
+                            <p className="card-price">Price: ${x.price / 100}</p>
                             <a className="btn btn-primary">Add To Cart</a>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ export default function Home() {
     useEffect(() => {
         getAll()
             .then(result => {
-                setSneakers(result.sneakers);
+                setSneakers(result);
             })
     }, [])
 
