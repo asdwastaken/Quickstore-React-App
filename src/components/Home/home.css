@@ -54,6 +54,7 @@
 
 .home-sneakers-count {
     color: rgb(100, 100, 100);
+    font-size: 22px;
     margin-top: 0;
     font-weight: 500;
 }
@@ -101,14 +102,50 @@
     border: 2px solid rgb(60, 60, 60);
     border-radius: 10px;
     cursor: pointer;
-
+    position: relative;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
     transition: transform 0.1s ease-out;
     background-color: rgb(230, 230, 230);
 }
+
+
+
+.heart-icon {
+    position: relative;
+    height: 20px;
+    width: 12px;
+    background: rgb(50, 50, 50);
+    border-radius: 100px 100px 0 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 270px;
+}
+
+.heart-icon:before {
+    content: '';
+    position: absolute;
+    background: rgb(50, 50, 50);
+    height: 20px;
+    width: 12px;
+    transform: rotate(-90deg);
+    border-radius: 100px 100px 0 0;
+    left: -5px;
+    top: 5px;
+}
+
+.heart-icon:hover {
+    background: red;
+}
+
+.heart-icon:hover::before {
+    background-color: red;
+}
+
+
 
 .card-img-top {
     width: 300px;
@@ -116,16 +153,16 @@
     object-fit: scale-down;
 }
 
-.card-body{
+.card-body {
     position: relative;
-
+    height: 200px;
 }
 
 .card-body::after {
     content: '';
     width: 260px;
     height: 1px;
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
     position: absolute;
     top: 0;
     left: 20px;
@@ -133,18 +170,26 @@
 
 
 
-.card-title,
-.card-price {
-    font-size: 18px;
+.card-title {
+    font-size: 16px;
     color: rgb(100, 100, 100);
     font-weight: 500;
 }
 
 .card-price {
     font-size: 16px;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    
 }
 
-.add-btn{
+#old-price {
+    text-decoration: line-through;
+}
+
+
+
+.add-btn {
     text-decoration: none;
     color: rgb(50, 50, 50);
     font-weight: 600;
@@ -152,10 +197,12 @@
     padding: 5px 10px 5px 10px;
     border-radius: 8px;
     cursor: pointer;
-
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
 }
 
-.add-btn:hover{
+.add-btn:hover {
     color: white;
     background-color: rgb(50, 50, 50);
 }

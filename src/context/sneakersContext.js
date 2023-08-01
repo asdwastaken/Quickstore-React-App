@@ -9,6 +9,7 @@ export const SneakerProvider = ({
 
 
     const [sneakers, setSneakers] = useState([]);
+    const [selectedOption, setSelectedOption] = useState('');
 
     const [sneakersFormValues, setSneakersFormValues] = useState({
         nike: false,
@@ -18,7 +19,6 @@ export const SneakerProvider = ({
     })
 
 
-    const [selectedOption, setSelectedOption] = useState('');
 
 
     const onBrandChangeHandler = (e) => {
@@ -64,13 +64,24 @@ export const SneakerProvider = ({
 
 
 
+    const likeProduct = (productName) => {
+        alert(`You liked ${productName}!`)
+    }
+
+    const addToCart = (productName)=>{
+        alert(`${productName} has been added to your cart!`)
+    }
+
+
     const contextValues = {
         sneakers,
         setSneakers,
         sneakersFormValues,
         onBrandChangeHandler,
         onSortChangeHandler,
-        selectedOption
+        selectedOption,
+        likeProduct,
+        addToCart
     }
 
 
