@@ -180,8 +180,14 @@ export default function Home() {
 
                         </div>
 
-                        <div>
-                            <span>SORT</span>
+                        <div className="sort-container">
+                            <span>Sort</span>
+                            <select className="form-select">
+                                <option selected>Relevance</option>
+                                <option value="price-ascending">Lowest Price</option>
+                                <option value="price-descending">Highest Price</option>
+                                <option value="rating">Rating</option>
+                            </select>
                         </div>
                     </div>
                 </div>
