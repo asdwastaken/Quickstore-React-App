@@ -12,18 +12,84 @@ export const SneakerProvider = ({
     const [selectedOption, setSelectedOption] = useState('');
 
 
-    const [sneakersFormValues, setSneakersFormValues] = useState({
+    const [sneakersBrandValues, setSneakersBrandValues] = useState({
         nike: false,
         adidas: false,
         jordan: false,
         vans: false,
     })
 
+    const [sneakersColorValues, setSneakersColorValues] = useState({
+        red: false,
+        blue: false,
+        black: false,
+        yellow: false,
+        green: false,
+    })
+
+    const [sneakersGenderValues, setSneakersGenderValues] = useState({
+        men: false,
+        women: false,
+    })
+
+    const [sneakersSizeValues, setSneakersSizeValues] = useState({
+        7: false,
+        8: false,
+        9: false,
+        10: false,
+        11: false,
+    })
+
 
     const [likedProducts, setLikedProducts] = useState([]);
 
     const onBrandChangeHandler = (e) => {
-        setSneakersFormValues(state => ({ ...state, [e.target.name]: e.target.value }));
+        setSneakersBrandValues(state => ({ ...state, [e.target.name]: !state[e.target.name] }));
+    }
+
+    const onColorChangeHandler = (e) => {
+        setSneakersColorValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+    };
+
+    const onGenderChangeHandler = (e) => {
+        setSneakersGenderValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+    };
+
+    const onSizeChangeHandler = (e) => {
+        setSneakersSizeValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+    };
+
+
+    const onResetFilterClick = (e) => {
+        e.preventDefault();
+
+        setSneakersBrandValues({
+            nike: false,
+            adidas: false,
+            jordan: false,
+            vans: false,
+        })
+
+        setSneakersColorValues({
+            red: false,
+            blue: false,
+            black: false,
+            yellow: false,
+            green: false,
+        })
+
+        setSneakersGenderValues({
+            men: false,
+            women: false,
+        })
+
+        setSneakersSizeValues({
+            7: false,
+            8: false,
+            9: false,
+            10: false,
+            11: false,
+        })
     }
 
 
@@ -83,14 +149,21 @@ export const SneakerProvider = ({
     const contextValues = {
         sneakers,
         setSneakers,
-        sneakersFormValues,
+        sneakersBrandValues,
+        sneakersColorValues,
+        sneakersGenderValues,
+        sneakersSizeValues,
+        onSizeChangeHandler,
+        onGenderChangeHandler,
         onBrandChangeHandler,
+        onColorChangeHandler,
         onSortChangeHandler,
         selectedOption,
         likeProduct,
         unlikeProduct,
         addToCart,
-        likedProducts
+        likedProducts,
+        onResetFilterClick
     }
 
 
