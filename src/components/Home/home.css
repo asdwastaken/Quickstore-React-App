@@ -1,9 +1,12 @@
 .home {
     position: relative;
     top: 60px;
+
 }
 
-
+.home-container {
+    padding-bottom: 60px;
+}
 
 .home-images-header {
     width: 100%;
@@ -97,7 +100,7 @@
     row-gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 60px;
+    margin: 60px;
 }
 
 .card {
@@ -186,12 +189,13 @@
 }
 
 .add-btn:hover,
-.filters-btn:hover {
+.filters-btn:hover,
+.load-more-btn:hover {
     color: white;
     background-color: rgb(50, 50, 50);
 }
 
-.filters-btn{
+.filters-btn {
     color: rgb(50, 50, 50);
     font-weight: 600;
     border: none;
@@ -201,6 +205,38 @@
     margin-bottom: 8px;
     margin-left: 16px;
     padding: 2px 6px 2px 6px;
+}
+
+
+
+#no-more-products-span {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.load-more-btn {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
+.load-more-btn:disabled{
+    background-color: rgb(200, 200, 200);
+    color: white;
+
+}
+
+.load-more-btn:disabled:hover{
+    color: white;
+
 }
 
 @media screen and (max-width:1350px) {

@@ -1,4 +1,5 @@
-export const productRowsFormatter = (products) => {
+export const productRowsFormatter = (products, count) => {
+    let newArray = products.slice();
 
-    return products.splice(0,20);
+    return newArray.splice(0, count);
 }

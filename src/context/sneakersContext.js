@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { productRowsFormatter } from "../functions/productRowsFormatter";
 
 
 export const sneakerContext = createContext();
@@ -9,6 +10,9 @@ export const SneakerProvider = ({
 
 
     const [sneakers, setSneakers] = useState([]);
+    const [allSneakers, setAllSneakers] = useState([]);
+    const [sneakersCount, setSneakersCount] = useState(0);
+    const [loadedMore, setLoadedMore] = useState(20);
     const [selectedOption, setSelectedOption] = useState('');
     const [likedProducts, setLikedProducts] = useState([]);
 
@@ -99,7 +103,7 @@ export const SneakerProvider = ({
 
     const onApplyFiltersClick = (e) => {
         e.preventDefault();
-        let sneakersArray = sneakers;
+        let sneakersArray = allSneakers.slice();
         let brandArray = [];
         let colorArray = [];
         let genderArray = [];
@@ -118,7 +122,9 @@ export const SneakerProvider = ({
                         brandArray.push(product);
                     }
                 })
+
                 setSneakers(brandArray);
+                setSneakersCount(brandArray.length)
             }
 
             if (brandValues.every(x => x !== true)) {
@@ -126,6 +132,7 @@ export const SneakerProvider = ({
                 return brandArray;
             }
         })
+
 
         colorEntries.forEach(x => {
             if (x[1] === true) {
@@ -135,6 +142,7 @@ export const SneakerProvider = ({
                     }
                 })
                 setSneakers(colorArray);
+                setSneakersCount(colorArray.length)
 
             }
         })
@@ -147,6 +155,7 @@ export const SneakerProvider = ({
                     }
                 })
                 setSneakers(genderArray);
+                setSneakersCount(genderArray.length)
 
             }
         })
@@ -159,6 +168,7 @@ export const SneakerProvider = ({
                     }
                 })
                 setSneakers(sizeArray);
+                setSneakersCount(sizeArray.length)
 
             }
         })
@@ -220,9 +230,19 @@ export const SneakerProvider = ({
     }
 
 
+    const loadMoreProducts = () => {
+        setLoadedMore(state => state + 20);
+    }
+
     const contextValues = {
         sneakers,
         setSneakers,
+        allSneakers,
+        setAllSneakers,
+        sneakersCount,
+        loadedMore,
+        loadMoreProducts,
+        setSneakersCount,
         sneakersBrandValues,
         sneakersColorValues,
         sneakersGenderValues,

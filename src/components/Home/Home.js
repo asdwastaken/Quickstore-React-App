@@ -6,10 +6,16 @@ import { useEffect, useContext } from 'react';
 import { sneakerContext } from '../../context/sneakersContext';
 import HomeMenus from './HomeMenus';
 import HomeProductsGrid from './HomeProductsGrid';
+import { productRowsFormatter } from '../../functions/productRowsFormatter';
 
 export default function Home() {
 
     const { setSneakers,
+        setAllSneakers,
+        setSneakersCount,
+        sneakersCount,
+        loadedMore,
+        loadMoreProducts,
         sneakersBrandValues,
         sneakersColorValues,
         sneakersGenderValues,
@@ -18,11 +24,14 @@ export default function Home() {
     useEffect(() => {
         getAll()
             .then(result => {
-                setSneakers(result);
+                const products = productRowsFormatter(result, loadedMore);
+                setSneakers(products);
+                setAllSneakers(result);
+                setSneakersCount(result.length);
             })
-    }, [sneakersBrandValues, sneakersColorValues, sneakersGenderValues, sneakersSizeValues])
+    }, [sneakersBrandValues, sneakersColorValues, sneakersGenderValues, sneakersSizeValues, loadedMore])
 
-    
+
     return (
         <div className="home">
             <div className="home-container">
@@ -37,6 +46,14 @@ export default function Home() {
 
                 <HomeMenus />
                 <HomeProductsGrid />
+                {loadedMore >= sneakersCount &&
+                    <span id="no-more-products-span">No more products</span>
+                }
+
+                <button className="load-more-btn"
+                    disabled={loadedMore >= sneakersCount ? true : false}
+                    onClick={loadMoreProducts}>Load More
+                </button>
             </div >
         </div >
     )

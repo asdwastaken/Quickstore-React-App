@@ -5,6 +5,7 @@ import { useContext } from 'react';
 export default function HomeMenus() {
 
     const { sneakers,
+        sneakersCount,
         sneakersBrandValues,
         sneakersColorValues,
         sneakersGenderValues,
@@ -22,7 +23,7 @@ export default function HomeMenus() {
         <div className="home-products-container">
             <div className="home-sneakers-title-container">
                 <h2 className="home-sneakers-heading">SNEAKERS</h2>
-                <h3 className="home-sneakers-count">{sneakers.length} Sneakers Available</h3>
+                <h3 className="home-sneakers-count">{sneakersCount} Sneakers Available</h3>
             </div>
             <div className="home-sort-filter-container">
                 <div className="filter-container">
