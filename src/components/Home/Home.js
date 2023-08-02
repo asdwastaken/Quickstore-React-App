@@ -9,15 +9,20 @@ import HomeProductsGrid from './HomeProductsGrid';
 
 export default function Home() {
 
-    const { setSneakers } = useContext(sneakerContext);
+    const { setSneakers,
+        sneakersBrandValues,
+        sneakersColorValues,
+        sneakersGenderValues,
+        sneakersSizeValues } = useContext(sneakerContext);
 
     useEffect(() => {
         getAll()
             .then(result => {
                 setSneakers(result);
             })
-    }, [])
+    }, [sneakersBrandValues, sneakersColorValues, sneakersGenderValues, sneakersSizeValues])
 
+    
     return (
         <div className="home">
             <div className="home-container">

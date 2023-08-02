@@ -15,7 +15,8 @@ export default function HomeMenus() {
         onColorChangeHandler,
         onSortChangeHandler,
         selectedOption,
-        onResetFilterClick } = useContext(sneakerContext);
+        onResetFiltersClick,
+        onApplyFiltersClick } = useContext(sneakerContext);
 
     return (
         <div className="home-products-container">
@@ -35,26 +36,26 @@ export default function HomeMenus() {
                                 <a className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Brand</a>
                                 <ul className="dropdown-menu">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.nike} value={sneakersBrandValues.nike} onChange={onBrandChangeHandler} name="nike" />
-                                        <label className="form-check-label" htmlFor="nike">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.Nike} value={sneakersBrandValues.Nike} onChange={onBrandChangeHandler} name="Nike" />
+                                        <label className="form-check-label" htmlFor="Nike">
                                             Nike
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.adidas} value={sneakersBrandValues.adidas} onChange={onBrandChangeHandler} name="adidas" />
-                                        <label className="form-check-label" htmlFor="adidas">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.Adidas} value={sneakersBrandValues.Adidas} onChange={onBrandChangeHandler} name="Adidas" />
+                                        <label className="form-check-label" htmlFor="Adidas">
                                             Adidas
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.jordan} value={sneakersBrandValues.jordan} onChange={onBrandChangeHandler} name="jordan" />
-                                        <label className="form-check-label" htmlFor="jordan">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues["Air Jordan"]} value={sneakersBrandValues["Air Jordan"]} onChange={onBrandChangeHandler} name="Air Jordan" />
+                                        <label className="form-check-label" htmlFor="Air Jordan">
                                             Air Jordan
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.vans} value={sneakersBrandValues.vans} onChange={onBrandChangeHandler} name="vans" />
-                                        <label className="form-check-label" htmlFor="vans">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.Vans} value={sneakersBrandValues.Vans} onChange={onBrandChangeHandler} name="Vans" />
+                                        <label className="form-check-label" htmlFor="Vans">
                                             Vans
                                         </label>
                                     </div>
@@ -65,32 +66,32 @@ export default function HomeMenus() {
                                 <a className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Color</a>
                                 <ul className="dropdown-menu">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.red} value={sneakersColorValues.red} onChange={onColorChangeHandler} name="red" />
-                                        <label className="form-check-label" htmlFor="red">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Red} value={sneakersColorValues.Red} onChange={onColorChangeHandler} name="Red" />
+                                        <label className="form-check-label" htmlFor="Red">
                                             Red
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.blue} value={sneakersColorValues.blue} onChange={onColorChangeHandler} name="blue" />
-                                        <label className="form-check-label" htmlFor="blue">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Blue} value={sneakersColorValues.Blue} onChange={onColorChangeHandler} name="Blue" />
+                                        <label className="form-check-label" htmlFor="Blue">
                                             Blue
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.black} value={sneakersColorValues.black} onChange={onColorChangeHandler} name="black" />
-                                        <label className="form-check-label" htmlFor="black">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Black} value={sneakersColorValues.Black} onChange={onColorChangeHandler} name="Black" />
+                                        <label className="form-check-label" htmlFor="Black">
                                             Black
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.yellow} value={sneakersColorValues.yellow} onChange={onColorChangeHandler} name="yellow" />
-                                        <label className="form-check-label" htmlFor="yellow">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Yellow} value={sneakersColorValues.Yellow} onChange={onColorChangeHandler} name="Yellow" />
+                                        <label className="form-check-label" htmlFor="Yellow">
                                             Yellow
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.green} value={sneakersColorValues.green} onChange={onColorChangeHandler} name="green" />
-                                        <label className="form-check-label" htmlFor="green">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Green} value={sneakersColorValues.Green} onChange={onColorChangeHandler} name="Green" />
+                                        <label className="form-check-label" htmlFor="Green">
                                             Green
                                         </label>
                                     </div>
@@ -119,40 +120,40 @@ export default function HomeMenus() {
                                 <a className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Size</a>
                                 <ul className="dropdown-menu">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues[7]} value={sneakersSizeValues[7]} onChange={onSizeChangeHandler} name="7" />
-                                        <label className="form-check-label" htmlFor="size-7">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues["7"]} value={sneakersSizeValues["7"]} onChange={onSizeChangeHandler} name="7" />
+                                        <label className="form-check-label" htmlFor="7">
                                             7
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues[8]} value={sneakersSizeValues[8]} onChange={onSizeChangeHandler} name="8" />
-                                        <label className="form-check-label" htmlFor="size-8">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues["8"]} value={sneakersSizeValues["8"]} onChange={onSizeChangeHandler} name="8" />
+                                        <label className="form-check-label" htmlFor="8">
                                             8
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox"  checked={sneakersSizeValues[9]} value={sneakersSizeValues[9]} onChange={onSizeChangeHandler} name="9" />
-                                        <label className="form-check-label" htmlFor="size-9">
+                                        <input className="form-check-input" type="checkbox"  checked={sneakersSizeValues["9"]} value={sneakersSizeValues["9"]} onChange={onSizeChangeHandler} name="9" />
+                                        <label className="form-check-label" htmlFor="9">
                                             9
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues[10]} value={sneakersSizeValues[10]} onChange={onSizeChangeHandler} name="10" />
-                                        <label className="form-check-label" htmlFor="size-10">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues["10"]} value={sneakersSizeValues["10"]} onChange={onSizeChangeHandler} name="10" />
+                                        <label className="form-check-label" htmlFor="10">
                                             10
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={sneakersGenderValues[11]} value={sneakersGenderValues[11]} onChange={onSizeChangeHandler} name="11" />
-                                        <label className="form-check-label" htmlFor="size-11">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersGenderValues["11"]} value={sneakersGenderValues["11"]} onChange={onSizeChangeHandler} name="11" />
+                                        <label className="form-check-label" htmlFor="11">
                                             11
                                         </label>
                                     </div>
                                 </ul>
                             </li>
                             <li>
-                                <button type="submit" className="filters-btn">Apply</button>
-                                <button type="submit" className="filters-btn" onClick={onResetFilterClick}>Reset</button>
+                                <button type="submit" className="filters-btn" onClick={onApplyFiltersClick}>Apply</button>
+                                <button type="submit" className="filters-btn" onClick={onResetFiltersClick}>Reset</button>
                             </li>
                         </ul>
                     </div>

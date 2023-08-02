@@ -10,21 +10,22 @@ export const SneakerProvider = ({
 
     const [sneakers, setSneakers] = useState([]);
     const [selectedOption, setSelectedOption] = useState('');
+    const [likedProducts, setLikedProducts] = useState([]);
 
 
     const [sneakersBrandValues, setSneakersBrandValues] = useState({
-        nike: false,
-        adidas: false,
-        jordan: false,
-        vans: false,
+        Nike: false,
+        Adidas: false,
+        "Air Jordan": false,
+        Vans: false,
     })
 
     const [sneakersColorValues, setSneakersColorValues] = useState({
-        red: false,
-        blue: false,
-        black: false,
-        yellow: false,
-        green: false,
+        Red: false,
+        Blue: false,
+        Black: false,
+        Yellow: false,
+        Green: false,
     })
 
     const [sneakersGenderValues, setSneakersGenderValues] = useState({
@@ -33,15 +34,14 @@ export const SneakerProvider = ({
     })
 
     const [sneakersSizeValues, setSneakersSizeValues] = useState({
-        7: false,
-        8: false,
-        9: false,
-        10: false,
-        11: false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
     })
 
 
-    const [likedProducts, setLikedProducts] = useState([]);
 
     const onBrandChangeHandler = (e) => {
         setSneakersBrandValues(state => ({ ...state, [e.target.name]: !state[e.target.name] }));
@@ -60,22 +60,22 @@ export const SneakerProvider = ({
     };
 
 
-    const onResetFilterClick = (e) => {
+    const onResetFiltersClick = (e) => {
         e.preventDefault();
 
         setSneakersBrandValues({
-            nike: false,
-            adidas: false,
-            jordan: false,
-            vans: false,
+            Nike: false,
+            Adidas: false,
+            "Air Jordan": false,
+            Vans: false,
         })
 
         setSneakersColorValues({
-            red: false,
-            blue: false,
-            black: false,
-            yellow: false,
-            green: false,
+            Red: false,
+            Blue: false,
+            Black: false,
+            Yellow: false,
+            Green: false,
         })
 
         setSneakersGenderValues({
@@ -84,13 +84,84 @@ export const SneakerProvider = ({
         })
 
         setSneakersSizeValues({
-            7: false,
-            8: false,
-            9: false,
-            10: false,
-            11: false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
         })
     }
+
+
+
+    const onApplyFiltersClick = (e) => {
+        e.preventDefault();
+        let sneakersArray = sneakers;
+        let brandArray = [];
+        let colorArray = [];
+        let genderArray = [];
+        let sizeArray = [];
+
+        const brandEntries = Object.entries(sneakersBrandValues);
+        const brandValues = Object.values(sneakersBrandValues);
+        const colorEntries = Object.entries(sneakersColorValues);
+        const genderEntries = Object.entries(sneakersGenderValues);
+        const sizeEntries = Object.entries(sneakersSizeValues);
+
+        brandEntries.forEach(x => {
+            if (x[1] === true) {
+                sneakersArray.map(product => {
+                    if (product.brand_name === x[0]) {
+                        brandArray.push(product);
+                    }
+                })
+                setSneakers(brandArray);
+            }
+
+            if (brandValues.every(x => x !== true)) {
+                brandArray = sneakersArray;
+                return brandArray;
+            }
+        })
+
+        colorEntries.forEach(x => {
+            if (x[1] === true) {
+                brandArray.map(product => {
+                    if (product.color === x[0]) {
+                        colorArray.push(product);
+                    }
+                })
+                setSneakers(colorArray);
+
+            }
+        })
+
+        genderEntries.forEach(x => {
+            if (x[1] === true) {
+                brandArray.map(product => {
+                    if (product.gender.includes(x[0])) {
+                        genderArray.push(product);
+                    }
+                })
+                setSneakers(genderArray);
+
+            }
+        })
+
+        sizeEntries.forEach(x => {
+            if (x[1] === true) {
+                brandArray.map(product => {
+                    if (product.size_range.includes(Number(x[0]))) {
+                        sizeArray.push(product);
+                    }
+                })
+                setSneakers(sizeArray);
+
+            }
+        })
+
+    }
+
 
 
     const sortSneakers = (option) => {
@@ -163,7 +234,8 @@ export const SneakerProvider = ({
         unlikeProduct,
         addToCart,
         likedProducts,
-        onResetFilterClick
+        onResetFiltersClick,
+        onApplyFiltersClick
     }
 
 
