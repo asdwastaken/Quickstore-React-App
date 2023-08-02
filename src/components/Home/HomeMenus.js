@@ -59,6 +59,19 @@ export default function HomeMenus() {
                                             Vans
                                         </label>
                                     </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.Champion} value={sneakersBrandValues.Champion} onChange={onBrandChangeHandler} name="Champion" />
+                                        <label className="form-check-label" htmlFor="Champion">
+                                            Champion
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersBrandValues.Converse} value={sneakersBrandValues.Converse} onChange={onBrandChangeHandler} name="Converse" />
+                                        <label className="form-check-label" htmlFor="Converse">
+                                            Converse
+                                        </label>
+                                    </div>
+
                                 </ul>
                             </li>
 
@@ -93,6 +106,12 @@ export default function HomeMenus() {
                                         <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Green} value={sneakersColorValues.Green} onChange={onColorChangeHandler} name="Green" />
                                         <label className="form-check-label" htmlFor="Green">
                                             Green
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.White} value={sneakersColorValues.White} onChange={onColorChangeHandler} name="White" />
+                                        <label className="form-check-label" htmlFor="White">
+                                            White
                                         </label>
                                     </div>
                                 </ul>
@@ -132,7 +151,7 @@ export default function HomeMenus() {
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox"  checked={sneakersSizeValues["9"]} value={sneakersSizeValues["9"]} onChange={onSizeChangeHandler} name="9" />
+                                        <input className="form-check-input" type="checkbox" checked={sneakersSizeValues["9"]} value={sneakersSizeValues["9"]} onChange={onSizeChangeHandler} name="9" />
                                         <label className="form-check-label" htmlFor="9">
                                             9
                                         </label>

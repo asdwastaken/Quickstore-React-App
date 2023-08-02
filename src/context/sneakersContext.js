@@ -68,6 +68,8 @@ export const SneakerProvider = ({
             Adidas: false,
             "Air Jordan": false,
             Vans: false,
+            Champion: false,
+            Converse: false,
         })
 
         setSneakersColorValues({
@@ -76,6 +78,7 @@ export const SneakerProvider = ({
             Black: false,
             Yellow: false,
             Green: false,
+            White: false,
         })
 
         setSneakersGenderValues({
