@@ -50,10 +50,12 @@ export default function Home() {
                     <span id="no-more-products-span">No more products</span>
                 }
 
-                <button className="load-more-btn"
-                    disabled={loadedMore >= sneakersCount ? true : false}
-                    onClick={loadMoreProducts}>Load More
-                </button>
+                <div className="load-more-btn-container">
+                    <button className="load-more-btn"
+                        disabled={loadedMore >= sneakersCount ? true : false}
+                        onClick={loadMoreProducts}>Load More
+                    </button>
+                </div>
             </div >
         </div >
     )

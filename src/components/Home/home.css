@@ -218,6 +218,12 @@
     margin-bottom: 20px;
 }
 
+.load-more-btn-container{
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .load-more-btn {
     color: rgb(50, 50, 50);
     font-weight: 600;
@@ -225,7 +231,7 @@
     padding: 5px 10px 5px 10px;
     border-radius: 8px;
     cursor: pointer;
-    margin-left: 700px;
+
 }
 
 .load-more-btn:disabled{
