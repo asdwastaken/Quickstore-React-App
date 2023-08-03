@@ -14,7 +14,7 @@ export default function TshirtsProductsGrid() {
 
 
     return (
-        <div className="home-products-grid-container">
+        <div className="home-t-shirts-products-grid-container">
             {tShirts.map(x => {
                 return (
                     <div className="card" key={x.id}>

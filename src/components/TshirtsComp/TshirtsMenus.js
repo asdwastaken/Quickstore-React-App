@@ -20,12 +20,12 @@ export default function TshirtsMenus() {
         onApplyFiltersClick } = useContext(tShirtsContext);
 
     return (
-        <div className="home-products-container">
-            <div className="home-sneakers-title-container">
-                <h2 className="home-sneakers-heading">T-SHIRTS</h2>
-                <h3 className="home-sneakers-count">{tShirtsCount} {tShirtsCount == 1 ? "T-Shirt" : "T-Shirts"} Available</h3>
+        <div className="home-t-shirts-products-container">
+            <div className="home-t-shirts-title-container">
+                <h2 className="home-t-shirts-heading">T-SHIRTS</h2>
+                <h3 className="home-t-shirts-count">{tShirtsCount} {tShirtsCount == 1 ? "T-Shirt" : "T-Shirts"} Available</h3>
             </div>
-            <div className="home-sort-filter-container">
+            <div className="home-t-shirts-sort-filter-container">
                 <div className="filter-container">
                     <div className="dropdown">
                         <button className="btn-filter dropdown-toggle" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -1,34 +1,42 @@
-.home {
+.home-t-shirts {
     position: relative;
     top: 60px;
 
 }
 
-.home-container {
+.home-t-shirts-container {
     padding-bottom: 60px;
 }
 
-.home-images-header {
+.home-t-shirts-images-header {
     width: 100%;
     height: 320px;
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(53deg, rgba(196, 69, 74, 1) 35%, rgba(111, 150, 184, 1) 65%);
+    background: linear-gradient(53deg, #527EC4 35%, #B4B3AE 55%);
     z-index: 2;
 }
 
 
-.home-image {
+.home-image-t-shirt {
     object-fit: scale-down;
     width: 400px;
-    height: 400px;
+    height: 250px;
     position: relative;
     z-index: 2;
 
 }
 
-.home-image-container::after {
+.home-t-shirts-image-container {
+    height: 300px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.home-t-shirts-image-container::after {
     content: "";
     position: absolute;
     background-color: white;
@@ -40,29 +48,29 @@
     z-index: 0;
 }
 
-.home-products-container {
+.home-t-shirts-products-container {
     padding-left: 20px;
     padding-right: 20px;
 }
 
 
-.home-sneakers-title-container {
+.home-t-shirts-title-container {
     margin-left: 60px;
 }
 
-.home-sneakers-heading {
+.home-t-shirts-heading {
     font-size: 34px;
     margin-bottom: 10px;
 }
 
-.home-sneakers-count {
+.home-t-shirts-count {
     color: rgb(100, 100, 100);
     font-size: 22px;
     margin-top: 0;
     font-weight: 500;
 }
 
-.home-sort-filter-container {
+.home-t-shirts-sort-filter-container {
     display: flex;
     align-items: end;
     width: 380px;
@@ -91,7 +99,7 @@
     border-radius: 0
 }
 
-.home-products-grid-container {
+.home-t-shirts-products-grid-container {
     margin-top: 40px;
     display: grid;
     justify-content: center;
@@ -103,7 +111,7 @@
     margin: 60px;
 }
 
-.home-products-grid-container-mobile{
+.home-t-shirts-products-grid-container-mobile {
     display: none;
     margin-top: 40px;
     justify-content: center;
@@ -231,18 +239,18 @@
     margin-bottom: 20px;
 }
 
-#no-more-products-span-mobile{
+#no-more-products-span-mobile {
     display: none;
 }
 
 .load-more-btn-container,
-.load-more-btn-container-mobile{
+.load-more-btn-container-mobile {
     width: 110px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.load-more-btn-container-mobile{
+.load-more-btn-container-mobile {
     display: none;
 }
 
@@ -256,13 +264,13 @@
 
 }
 
-.load-more-btn:disabled{
+.load-more-btn:disabled {
     background-color: rgb(200, 200, 200);
     color: white;
 
 }
 
-.load-more-btn:disabled:hover{
+.load-more-btn:disabled:hover {
     color: white;
 
 }
@@ -270,7 +278,7 @@
 @media screen and (max-width:1350px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 260px 260px 260px 260px;
     }
 
@@ -316,7 +324,7 @@
 @media screen and (max-width:1150px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 230px 230px 230px 230px;
     }
 
@@ -365,12 +373,12 @@
 @media screen and (max-width:1040px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 200px 200px 200px 200px;
     }
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-t-shirts-sort-filter-container {
         margin-left: 30px;
     }
 
@@ -407,7 +415,7 @@
 @media screen and (max-width:920px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 180px 180px 180px 180px;
     }
 
@@ -458,7 +466,7 @@
 @media screen and (max-width:820px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 160px 160px 160px 160px;
     }
 
@@ -510,12 +518,12 @@
 @media screen and (max-width:750px) {
 
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         grid-template-columns: 140px 140px 140px 140px;
     }
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-sort-filter-container {
         margin-left: 10px;
     }
 
@@ -543,11 +551,11 @@
         width: 100px;
     }
 
-    .home-sneakers-heading {
+    .home-t-shirts-heading {
         font-size: 26px;
     }
 
-    .home-sneakers-count {
+    .home-t-shirts-count {
         font-size: 20px;
     }
 
@@ -558,17 +566,17 @@
 
 @media screen and (max-width:680px) {
 
-    .home-products-grid-container {
+    .home-t-shirts-products-grid-container {
         display: none;
     }
 
-    .home-products-grid-container-mobile {
+    .home-t-shirts-products-grid-container-mobile {
         display: grid;
         grid-template-columns: 300px;
     }
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-sort-filter-container {
         margin-left: 40px;
     }
 
@@ -613,12 +621,12 @@
     }
 
     #no-more-products-span-mobile,
-    .load-more-btn-container-mobile{
+    .load-more-btn-container-mobile {
         display: block;
     }
 
     #no-more-products-span,
-    .load-more-btn-container{
+    .load-more-btn-container {
         display: none;
     }
 }
@@ -626,12 +634,12 @@
 
 @media screen and (max-width:560px) {
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-sort-filter-container {
         margin-left: 20px;
     }
 
-    .home-sort-filter-container {
+    .home-t-shirts-sort-filter-container {
         width: 300px;
     }
 
@@ -647,12 +655,12 @@
 @media screen and (max-width:450px) {
 
 
-    .home-products-grid-container-mobile {
+    .home-t-shirts-products-grid-container-mobile {
         grid-template-columns: 260px;
     }
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-sort-filter-container {
         margin-left: 20px;
     }
 
@@ -700,12 +708,12 @@
 
 @media screen and (min-width:320px) and (max-width:360px) {
 
-    .home-sneakers-title-container,
-    .home-sort-filter-container {
+    .home-t-shirts-title-container,
+    .home-t-shirts-sort-filter-container {
         margin-left: 0;
     }
 
-    .home-sort-filter-container {
+    .home-t-shirts-sort-filter-container {
         width: 260px;
     }
 
@@ -720,14 +728,14 @@
 
 
 @media screen and (max-width:960px) {
-    .home-image {
+    .home-image-t-shirt {
         width: 300px;
-        height: 300px;
+        height: 200px;
     }
 
 
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 250px;
     }
 
@@ -736,12 +744,12 @@
 
 
 @media screen and (max-width:600px) {
-    .home-image {
+    .home-image-t-shirt {
         width: 250px;
-        height: 250px;
+        height: 175px;
     }
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 220px;
     }
 
@@ -754,12 +762,12 @@
 
 
 @media screen and (max-width:520px) {
-    .home-image {
+    .home-image-t-shirt {
         width: 225px;
-        height: 225px;
+        height: 150px;
     }
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 200px;
     }
 
@@ -768,12 +776,12 @@
 
 
 @media screen and (max-width:450px) {
-    .home-image {
+    .home-image-t-shirt {
         width: 200px;
-        height: 200px;
+        height: 130px;
     }
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 185px;
     }
 
@@ -783,12 +791,12 @@
 
 @media screen and (max-width:400px) {
 
-    .home-image {
+    .home-image-t-shirt {
         width: 180px;
-        height: 180px;
+        height: 120px;
     }
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 170px;
     }
 
@@ -797,12 +805,12 @@
 
 @media screen and (min-width:320px) and (max-width:375px) {
 
-    .home-image {
+    .home-image-t-shirt {
         width: 160px;
-        height: 160px;
+        height: 100px;
     }
 
-    .home-images-header {
+    .home-t-shirts-images-header {
         height: 160px;
     }
 

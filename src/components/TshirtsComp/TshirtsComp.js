@@ -1,7 +1,7 @@
 import './tshirtsComp.css';
 
-import shoesBlue from '../../images/jordan-blue.png';
-import shoesRed from '../../images/jordan-red.png';
+import underArmourTShirt from '../../images/under-armour-tshirt-blue.png';
+import nikeTShirt from '../../images/nike-tshirt.png';
 import { getAll } from '../../services/tShirtServices/tShirtService';
 import { useEffect, useContext } from 'react';
 import { tShirtsContext } from '../../context/tShirtsContext';
@@ -40,14 +40,15 @@ export default function TshirtsComp() {
 
 
     return (
-        <div className="home">
-            <div className="home-container">
-                <div className="home-images-header">
-                    <div className="home-image-container">
-                        <img src={shoesRed} className="home-image" />
+        <div className="home-t-shirts">
+            <div className="home-t-shirts-container">
+                <div className="home-t-shirts-images-header">
+                    <div className="home-t-shirts-image-container">
+                        <img src={underArmourTShirt} className="home-image-t-shirt" />
                     </div>
-                    <div className="home-image-container">
-                        <img src={shoesBlue} className="home-image" />
+                    <div className="home-t-shirts-image-container">
+                        <img src={nikeTShirt} className="home-image-t-shirt" />
+
                     </div>
                 </div>
 
