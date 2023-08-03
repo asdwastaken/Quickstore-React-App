@@ -14,9 +14,10 @@
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(53deg, #527EC4 35%, #B4B3AE 55%);
+    background: linear-gradient(53deg, rgba(248,117,65,1) 20%, rgba(180,179,174,1) 70%);
     z-index: 2;
 }
+
 
 
 .home-image-t-shirt {
@@ -33,7 +34,7 @@
     width: 280px;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .home-t-shirts-image-container::after {
@@ -728,9 +729,14 @@
 
 
 @media screen and (max-width:960px) {
+
+.home-t-shirts-image-container{
+    width: 180px;
+}
+
     .home-image-t-shirt {
         width: 300px;
-        height: 200px;
+        height: 180px;
     }
 
 
@@ -744,9 +750,14 @@
 
 
 @media screen and (max-width:600px) {
+
+    .home-t-shirts-image-container{
+        width: 150px;
+    }
+
     .home-image-t-shirt {
         width: 250px;
-        height: 175px;
+        height: 150px;
     }
 
     .home-t-shirts-images-header {
@@ -762,9 +773,14 @@
 
 
 @media screen and (max-width:520px) {
+
+    .home-t-shirts-image-container{
+        padding-top: 10px;
+    }
+
     .home-image-t-shirt {
         width: 225px;
-        height: 150px;
+        height: 140px;
     }
 
     .home-t-shirts-images-header {
@@ -776,6 +792,11 @@
 
 
 @media screen and (max-width:450px) {
+
+    .home-t-shirts-image-container{
+        padding-top: 5px;
+        width: 130px;
+    }
     .home-image-t-shirt {
         width: 200px;
         height: 130px;
@@ -790,6 +811,10 @@
 
 
 @media screen and (max-width:400px) {
+
+    .home-t-shirts-image-container{
+        width: 110px;
+    }
 
     .home-image-t-shirt {
         width: 180px;
@@ -807,7 +832,7 @@
 
     .home-image-t-shirt {
         width: 160px;
-        height: 100px;
+        height: 110px;
     }
 
     .home-t-shirts-images-header {

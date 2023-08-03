@@ -16,9 +16,9 @@ export default function Navigation() {
             <div className="navbar-container">
                 <Link to="/"><img src={logo} className="nav-logo" /></Link>
                 <div className="nav-links-container" style={{ display: !mobileMenu ? 'flex' : 'none' }}>
-                    <Link to="/" className="nav-link">Sneakers</Link>
-                    <Link to="/t-shirts" className="nav-link">T-Shirts</Link>
-                    <Link to="/shorts" className="nav-link">Shorts</Link>
+                    <Link to="/" className="nav-link" onClick={onMenuClick}>Sneakers</Link>
+                    <Link to="/t-shirts" className="nav-link" onClick={onMenuClick}>T-Shirts</Link>
+                    <Link to="/shorts" className="nav-link" onClick={onMenuClick}>Shorts</Link>
                 </div>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" className="user-icon" viewBox="0 0 16 16">
