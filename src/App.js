@@ -7,7 +7,6 @@ import { SneakerProvider } from './context/sneakersContext';
 
 function App() {
 
-
   return (
     <BrowserRouter>
       <SneakerProvider>
