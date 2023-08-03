@@ -6,15 +6,18 @@ import { useEffect, useContext } from 'react';
 import { sneakerContext } from '../../context/sneakersContext';
 import HomeMenus from './HomeMenus';
 import HomeProductsGrid from './HomeProductsGrid';
+import HomeProductsGridMobile from './HomeProductsGridMobile';
 import { productRowsFormatter } from '../../functions/productRowsFormatter';
 
 export default function Home() {
 
     const { setSneakers,
+        setSneakersMobile,
         setAllSneakers,
         setSneakersCount,
         sneakersCount,
         loadedMore,
+        loadedMoreMobile,
         loadMoreProducts,
         sneakersBrandValues,
         sneakersColorValues,
@@ -25,11 +28,14 @@ export default function Home() {
         getAll()
             .then(result => {
                 const products = productRowsFormatter(result, loadedMore);
+                const productsMobile = productRowsFormatter(result, loadedMoreMobile);
+
                 setSneakers(products);
+                setSneakersMobile(productsMobile);
                 setAllSneakers(result);
                 setSneakersCount(result.length);
             })
-    }, [sneakersBrandValues, sneakersColorValues, sneakersGenderValues, sneakersSizeValues, loadedMore])
+    }, [sneakersBrandValues, sneakersColorValues, sneakersGenderValues, sneakersSizeValues, loadedMore, loadedMoreMobile])
 
 
     return (
@@ -46,6 +52,8 @@ export default function Home() {
 
                 <HomeMenus />
                 <HomeProductsGrid />
+                <HomeProductsGridMobile />
+
                 {loadedMore >= sneakersCount &&
                     <span id="no-more-products-span">No more products</span>
                 }
@@ -56,6 +64,18 @@ export default function Home() {
                         onClick={loadMoreProducts}>Load More
                     </button>
                 </div>
+
+                {loadedMoreMobile >= sneakersCount &&
+                    <span id="no-more-products-span-mobile">No more products</span>
+                }
+
+                <div className="load-more-btn-container-mobile">
+                    <button className="load-more-btn"
+                        disabled={loadedMoreMobile >= sneakersCount ? true : false}
+                        onClick={loadMoreProducts}>Load More
+                    </button>
+                </div>
+
             </div >
         </div >
     )

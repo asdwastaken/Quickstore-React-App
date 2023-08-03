@@ -10,11 +10,15 @@ export const SneakerProvider = ({
 
 
     const [sneakers, setSneakers] = useState([]);
+    const [sneakersMobile, setSneakersMobile] = useState([]);
     const [allSneakers, setAllSneakers] = useState([]);
     const [sneakersCount, setSneakersCount] = useState(0);
     const [loadedMore, setLoadedMore] = useState(20);
+    const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
     const [likedProducts, setLikedProducts] = useState([]);
+
+
 
 
     const [sneakersBrandValues, setSneakersBrandValues] = useState({
@@ -141,6 +145,7 @@ export const SneakerProvider = ({
                         colorArray.push(product);
                     }
                 })
+
                 setSneakers(colorArray);
                 setSneakersCount(colorArray.length)
 
@@ -154,6 +159,7 @@ export const SneakerProvider = ({
                         genderArray.push(product);
                     }
                 })
+
                 setSneakers(genderArray);
                 setSneakersCount(genderArray.length)
 
@@ -167,6 +173,8 @@ export const SneakerProvider = ({
                         sizeArray.push(product);
                     }
                 })
+               
+
                 setSneakers(sizeArray);
                 setSneakersCount(sizeArray.length)
 
@@ -232,15 +240,19 @@ export const SneakerProvider = ({
 
     const loadMoreProducts = () => {
         setLoadedMore(state => state + 20);
+        setLoadedMoreMobile(state => state + 5);
     }
 
     const contextValues = {
         sneakers,
         setSneakers,
+        sneakersMobile,
+        setSneakersMobile,
         allSneakers,
         setAllSneakers,
         sneakersCount,
         loadedMore,
+        loadedMoreMobile,
         loadMoreProducts,
         setSneakersCount,
         sneakersBrandValues,

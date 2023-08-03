@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 export default function HomeProductsGrid() {
 
-    const { sneakers,
+    const { sneakersMobile,
         likeProduct,
         unlikeProduct,
         addToCart,
@@ -14,8 +14,8 @@ export default function HomeProductsGrid() {
 
 
     return (
-        <div className="home-products-grid-container">
-            {sneakers.map(x => {
+        <div className="home-products-grid-container-mobile">
+            {sneakersMobile.map(x => {
                 return (
                     <div className="card" key={x.id}>
 

@@ -3,3 +3,5 @@ export const productRowsFormatter = (products, count) => {
 
     return newArray.splice(0, count);
 }
+
+
