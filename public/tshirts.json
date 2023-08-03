@@ -1,245 +1,698 @@
 {
-    "tshirts": [
-      {
-        "brand_name": "Nike",
-        "price": 29.99,
-        "color": "Black",
-        "gender": ["Men"],
-        "size_range": [
+  "tshirts": [
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 1,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Adidas",
-        "price": 24.95,
-        "color": "White",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 2,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 2500,
+      "color": "White",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Puma",
-        "price": 19.99,
-        "color": "Gray",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 3,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 2000,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Under Armour",
-        "price": 32.50,
-        "color": "Blue",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 4,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 3000,
+      "color": "Blue",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Reebok",
-        "price": 27.50,
-        "color": "Red",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 5,
+      "rating": 0,
+      "brand_name": "Reebok",
+      "price": 2500,
+      "color": "Red",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Converse",
-        "price": 22.00,
-        "color": "Navy",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 6,
+      "rating": 0,
+      "brand_name": "Converse",
+      "price": 2000,
+      "color": "Navy",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Vans",
-        "price": 25.00,
-        "color": "Black",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 7,
+      "rating": 0,
+      "brand_name": "Vans",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "New Balance",
-        "price": 28.75,
-        "color": "Gray",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 8,
+      "rating": 0,
+      "brand_name": "New Balance",
+      "price": 2875,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Adidas",
-        "price": 26.99,
-        "color": "Pink",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 9,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 2700,
+      "color": "Pink",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Puma",
-        "price": 29.50,
-        "color": "Green",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 10,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 3000,
+      "color": "Green",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Nike",
-        "price": 31.50,
-        "color": "White",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 11,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "White",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Under Armour",
-        "price": 24.95,
-        "color": "Black",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 12,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Reebok",
-        "price": 29.99,
-        "color": "Blue",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 13,
+      "rating": 0,
+      "brand_name": "Reebok",
+      "price": 3000,
+      "color": "Blue",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Converse",
-        "price": 22.50,
-        "color": "Gray",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 14,
+      "rating": 0,
+      "brand_name": "Converse",
+      "price": 2500,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Vans",
-        "price": 23.00,
-        "color": "Red",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 15,
+      "rating": 0,
+      "brand_name": "Vans",
+      "price": 2300,
+      "color": "Red",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "New Balance",
-        "price": 26.50,
-        "color": "Black",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 16,
+      "rating": 0,
+      "brand_name": "New Balance",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Adidas",
-        "price": 28.99,
-        "color": "White",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 17,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 3000,
+      "color": "White",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Puma",
-        "price": 21.50,
-        "color": "Navy",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 18,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 2500,
+      "color": "Navy",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Nike",
-        "price": 30.50,
-        "color": "Gray",
-        "gender": ["Men"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 19,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      },
-      {
-        "brand_name": "Under Armour",
-        "price": 25.95,
-        "color": "Pink",
-        "gender": ["Women"],
-        "size_range": [
+    },
+    {
+      "image_url": "",
+      "id": 20,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 2500,
+      "color": "Pink",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
         "S",
         "M",
         "L",
         "XL"
       ]
-      }
-    ]
-  }
-  
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 1,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 2,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 2500,
+      "color": "White",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 3,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 2000,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 4,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 3000,
+      "color": "Blue",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 5,
+      "rating": 0,
+      "brand_name": "Reebok",
+      "price": 2500,
+      "color": "Red",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 6,
+      "rating": 0,
+      "brand_name": "Converse",
+      "price": 2000,
+      "color": "Navy",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "discounted_price": true,
+      "image_url": "",
+      "id": 7,
+      "rating": 0,
+      "brand_name": "Vans",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 8,
+      "rating": 0,
+      "brand_name": "New Balance",
+      "price": 2875,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 9,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 2700,
+      "color": "Pink",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 10,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 3000,
+      "color": "Green",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 11,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "White",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 12,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 13,
+      "rating": 0,
+      "brand_name": "Reebok",
+      "price": 3000,
+      "color": "Blue",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 14,
+      "rating": 0,
+      "brand_name": "Converse",
+      "price": 2500,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 15,
+      "rating": 0,
+      "brand_name": "Vans",
+      "price": 2300,
+      "color": "Red",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 16,
+      "rating": 0,
+      "brand_name": "New Balance",
+      "price": 2500,
+      "color": "Black",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 17,
+      "rating": 0,
+      "brand_name": "Adidas",
+      "price": 3000,
+      "color": "White",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 18,
+      "rating": 0,
+      "brand_name": "Puma",
+      "price": 2500,
+      "color": "Navy",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 19,
+      "rating": 0,
+      "brand_name": "Nike",
+      "price": 3000,
+      "color": "Gray",
+      "gender": [
+        "Men"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "image_url": "",
+      "id": 20,
+      "rating": 0,
+      "brand_name": "Under Armour",
+      "price": 2500,
+      "color": "Pink",
+      "gender": [
+        "Women"
+      ],
+      "size_range": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}
