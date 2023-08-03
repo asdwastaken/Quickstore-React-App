@@ -23,7 +23,7 @@ export default function TshirtsMenus() {
         <div className="home-products-container">
             <div className="home-sneakers-title-container">
                 <h2 className="home-sneakers-heading">T-SHIRTS</h2>
-                <h3 className="home-sneakers-count">{tShirtsCount} T-Shirts Available</h3>
+                <h3 className="home-sneakers-count">{tShirtsCount} {tShirtsCount == 1 ? "T-Shirt" : "T-Shirts"} Available</h3>
             </div>
             <div className="home-sort-filter-container">
                 <div className="filter-container">
