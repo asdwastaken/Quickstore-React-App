@@ -26,7 +26,7 @@ export default function TshirtsProductsGrid() {
                         <img src={x.image_url} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h4 className="card-brand">{x.brand_name}</h4>
-                            {/* <h5 className="card-title">{x.name}</h5> */}
+                            <h5 className="card-title">{x.model}</h5>
                             {x.discounted_price
                                 ? <p className="card-price">Price: <span id="old-price">${x.price / 100}</span> ${((x.price / 100) - (x.price / 100) * 20 / 100)} </p>
                                 : <p className="card-price">Price: ${x.price / 100}</p>

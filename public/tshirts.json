@@ -3,6 +3,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.xxl.fi/filespin/01174598cfdc434fb729d5b90b4cfaeb?resize=722,722&quality=90",
+      "model":"CLUB Tee",
       "id": 1,
       "rating": 2,
       "brand_name": "Nike",
@@ -21,6 +22,7 @@
     {
       "discounted_price": true,
       "image_url": "https://lb.mikesport.com/cdn/shop/products/9b574e1bc781b061eac060cc30613f22.png?v=1639886052",
+      "model":"DRI-FIT",
       "id": 2,
       "rating": 3,
       "brand_name": "Adidas",
@@ -39,6 +41,7 @@
     {
       "discounted_price": true,
       "image_url": "https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-master-catalog-MAN/default/dwaf85c579/images/large/701221263003_pp_01_mcfc.png?sw=800&sh=800&sm=fit",
+      "model":"Essentials IV",
       "id": 3,
       "rating": 1,
       "brand_name": "Puma",
@@ -57,6 +60,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.prohockeylife.com/cdn/shop/products/UNDER_ARMOUR_TECH_MEN_S_T_SHIRT-1326413-400_grande.png?v=1569212832",
+      "model":"DRI-FIT",
       "id": 4,
       "rating": 1,
       "brand_name": "Under Armour",
@@ -75,6 +79,7 @@
     {
       "discounted_price": true,
       "image_url": "https://doubledoublevintage.com/cdn/shop/products/reebok_tshirt_red_896x_crop_center.png?v=1613497335",
+      "model":"Vintage",
       "id": 5,
       "rating": 0,
       "brand_name": "Reebok",
@@ -93,6 +98,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.geomix.at/shop/images/0-0-128928.png",
+      "model":"FUTURA",
       "id": 6,
       "rating": 0,
       "brand_name": "Converse",
@@ -111,6 +117,7 @@
     {
       "discounted_price": true,
       "image_url": "https://images.footlocker.com/is/image/EBFL2/A7PJIBLK",
+      "model":"Off The Wall Classic Tee",
       "id": 7,
       "rating": 5,
       "brand_name": "Vans",
@@ -128,6 +135,7 @@
     },
     {
       "image_url": "https://www.klarna.com/sac/product/232x232/3002821007/New-Balance-Essentials-Stacked-Logo-T-shirt-Athletic-Grey.jpg?ph=true",
+      "model":"DRI-FIT",
       "id": 8,
       "rating": 5,
       "brand_name": "New Balance",
@@ -145,6 +153,7 @@
     },
     {
       "image_url": "https://eurosport.com.mt/images/thumbs/0178743_essentials-big-logo-boyfriend-t-shirt_500.png",
+      "model":"Essentials III",
       "id": 9,
       "rating": 5,
       "brand_name": "Adidas",
@@ -162,6 +171,7 @@
     },
     {
       "image_url": "https://www.totalfootballdirect.com/images/com_hikashop/upload/705370-05-3qf-600x600.png",
+      "model":"Varsity V",
       "id": 10,
       "rating": 1,
       "brand_name": "Puma",
@@ -179,6 +189,7 @@
     },
     {
       "image_url": "https://dallasmavs.shop/cdn/shop/products/DR6459-100-PHSFH001-2000_1800x1800.png?v=1663021101",
+      "model":"Swoosh III",
       "id": 11,
       "rating": 0,
       "brand_name": "Nike",
@@ -196,6 +207,7 @@
     },
     {
       "image_url": "https://www.justgolfonline.co.uk/cdn/shop/products/Sportstyle_T-Shirt_-_Black-removebg-preview_600x.png?v=1656087809",
+      "model":"DRI-FIT",
       "id": 12,
       "rating": 0,
       "brand_name": "Under Armour",
@@ -213,6 +225,7 @@
     },
     {
       "image_url": "https://images.keepersport.net/eyJidWNrZXQiOiJrZWVwZXJzcG9ydC1jdXN0b20tcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJyZWVib2tcL0VUU0ZQOTE1Ml8wMDBcL3JlZWJvay1ncy1zdGFja2VkLXRlZS10LXNoaXJ0LXdlaXNzLWZ1c3NiYWxsLXRlYW1zcG9ydC10ZXh0aWwtdC1zaGlydHMtZnA5MTUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODAwfX19",
+      "model":"DRI-FIT",
       "id": 13,
       "rating": 0,
       "brand_name": "Reebok",
@@ -230,6 +243,7 @@
     },
     {
       "image_url": "https://rookieindia.com/cdn/shop/products/E_9CC336_001_Front_e53134c3-46c4-468c-9f90-12b5fad6cc66_1800x1800.png?v=1657617802",
+      "model":"Essentials V",
       "id": 14,
       "rating": 0,
       "brand_name": "Converse",
@@ -247,6 +261,7 @@
     },
     {
       "image_url": "https://ph-test-11.slatic.net/p/fa491b74eddcf6fe9ac688e01f841127.png",
+      "model":"Vintage",
       "id": 15,
       "rating": 0,
       "brand_name": "Vans",
@@ -264,6 +279,7 @@
     },
     {
       "image_url": "https://images.squarespace-cdn.com/content/v1/58dacdd01b10e3e2a2381588/1587903158298-PH10CMX3H4C4AWL1I7C3/NewBalance-2_mockup_Front_Flat_Black.png?format=1000w",
+      "model":"DRI-FIT",
       "id": 16,
       "rating": 0,
       "brand_name": "New Balance",
@@ -281,6 +297,7 @@
     },
     {
       "image_url": "https://lb.mikesport.com/cdn/shop/products/IN149609.png?v=1639798100",
+      "model":"DRI-FIT",
       "id": 17,
       "rating": 0,
       "brand_name": "Adidas",
@@ -298,6 +315,7 @@
     },
     {
       "image_url": "https://images.keepersport.net/eyJidWNrZXQiOiJrZWVwZXJzcG9ydC1jdXN0b20tcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwdW1hXC9FVFM2NTY1MTVfMDRcL3B1bWEtZnRibG54dC1wcm8tdGVlLXQtc2hpcnQtZ2VsYi1zY2h3YXJ6LWYwNC1mdXNzYmFsbC10ZWFtc3BvcnQtdGV4dGlsLXQtc2hpcnRzLTY1NjUxNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMH19fQ==",
+      "model":"DRI-FIT",
       "id": 18,
       "rating": 0,
       "brand_name": "Puma",
@@ -315,6 +333,7 @@
     },
     {
       "image_url": "https://static.nike.com/a/images/t_default/221e067b-8031-44f5-90a4-c0fdc049662f/team-31-dri-fit-nba-t-shirt-5rpCV1.png",
+      "model":"Swoosh VI",
       "id": 19,
       "rating": 0,
       "brand_name": "Nike",
@@ -332,6 +351,7 @@
     },
     {
       "image_url": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/3478287.json",
+      "model":"DRI-FIT",
       "id": 20,
       "rating": 0,
       "brand_name": "Under Armour",
@@ -350,6 +370,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw9e1f4c19/images/hi-res/001456561_105.png?sw=600&sh=600&sm=fit&q=90",
+      "model":"FUTURA III",
       "id": 21,
       "rating": 0,
       "brand_name": "Nike",
@@ -368,6 +389,7 @@
     {
       "discounted_price": true,
       "image_url": "https://vsh.sportyfied.com/thumbs/regular/adidas-tshirt-hvid-sort-front-h44530_700x700.png",
+      "model":"FUTURA",
       "id": 22,
       "rating": 0,
       "brand_name": "Adidas",
@@ -386,6 +408,7 @@
     {
       "discounted_price": true,
       "image_url": "https://images.keepersport.net/eyJidWNrZXQiOiJrZWVwZXJzcG9ydC1jdXN0b20tcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwdW1hXC9FVFM2NTQ5MjRfMDYxXC9wdW1hLWFzY2Vuc2lvbi10ZWUtdC1zaGlydC1ncmF1LWY2MS1zcG9ydGJla2xlaWR1bmctaGVycmVuLW1lbi1tYWVubmVyLXNob3J0c2xlZXZlLWt1cmFybS1zaGlydC02NTQ5MjQucG5nIiwiZWRpdHMiOltdfQ==",
+      "model":"DRI-FIT",
       "id": 23,
       "rating": 0,
       "brand_name": "Puma",
@@ -404,6 +427,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.totalfootballdirect.com/images/com_hikashop/upload/thumbnails/300x300f/womens_tech_tee_front_-_navy.png",
+      "model":"DRI-FIT",
       "id": 24,
       "rating": 0,
       "brand_name": "Under Armour",
@@ -422,6 +446,7 @@
     {
       "discounted_price": true,
       "image_url": "https://images.squarespace-cdn.com/content/v1/554d0351e4b0fa8680380a1d/1511651574351-IYTILJZCTLEZX59FCY6X/reebok+shirt+1.png?format=2500w",
+      "model":"DRI-FIT",
       "id": 25,
       "rating": 0,
       "brand_name": "Reebok",
@@ -440,6 +465,7 @@
     {
       "discounted_price": true,
       "image_url": "https://www.courir.com/on/demandware.static/-/Sites-master-catalog-courir/default/dwe23e760c/images/hi-res/001504407_101.png",
+      "model":"Vintage",
       "id": 26,
       "rating": 0,
       "brand_name": "Converse",
@@ -458,6 +484,7 @@
     {
       "discounted_price": true,
       "image_url": "https://cdn.shopify.com/s/files/1/2656/8156/products/195436414467_1.png?v=1647447911",
+      "model":"Classic",
       "id": 27,
       "rating": 0,
       "brand_name": "Vans",
@@ -475,6 +502,7 @@
     },
     {
       "image_url": "https://d3p5zhm2sr0z0o.cloudfront.net/media/catalog/product/cache/d5009e93d2171974208dc6dfb9df83f5/n/e/new_yellow_MT01575VGL_1_0bc0.png",
+      "model":"DRI-FIT",
       "id": 28,
       "rating": 0,
       "brand_name": "New Balance",
@@ -492,6 +520,7 @@
     },
     {
       "image_url": "https://uae.gosportme.com/cdn/shop/files/HL2426_2_APPAREL_Photography_FrontCenterView_transparent_2000x.png?v=1684412685",
+      "model":"DRI-FIT",
       "id": 29,
       "rating": 0,
       "brand_name": "Adidas",
@@ -509,6 +538,7 @@
     },
     {
       "image_url": "https://images.keepersport.net/eyJidWNrZXQiOiJrZWVwZXJzcG9ydC1wcm9kdWN0LWltYWdlcy11cy1lYXN0LTEiLCJrZXkiOiJwdW1hXC8xMDE4MzM5Nl83MDQ5MzhfMDAxXC9wdW1hLXRlYW1yaXNlLXRyaWtvdC1raWRzLXJvdC1mMDEtNzA0OTM4LXRlYW1zcG9ydF9mcm9udC5wbmciLCJlZGl0cyI6W119",
+      "model":"DRI-FIT",
       "id": 30,
       "rating": 0,
       "brand_name": "Puma",
@@ -526,6 +556,7 @@
     },
     {
       "image_url": "https://static.nike.com/a/images/t_default/4f6d58d3-1fed-4846-af94-4c895874cb51/seattle-mens-soccer-t-shirt-SKNpfC.png",
+      "model":"Swoosh",
       "id": 31,
       "rating": 0,
       "brand_name": "Nike",
@@ -543,6 +574,7 @@
     },
     {
       "image_url": "https://garderoben.se/images/zoom/ua-boxed-sportstyle-short-sleeve_1329581-001.png",
+      "model":"DRI-FIT",
       "id": 32,
       "rating": 0,
       "brand_name": "Under Armour",
@@ -560,6 +592,7 @@
     },
     {
       "image_url": "https://www.geomix.at/shop/images/0-0-94172.png",
+      "model":"Essentials",
       "id": 33,
       "rating": 0,
       "brand_name": "Reebok",
@@ -577,6 +610,7 @@
     },
     {
       "image_url": "https://www.pngmart.com/files/22/Short-Sleeves-T-Shirt-Download-PNG-Image.png",
+      "model":"DRI-FIT",
       "id": 34,
       "rating": 0,
       "brand_name": "Converse",
@@ -594,6 +628,7 @@
     },
     {
       "image_url": "https://www.america-today.com/on/demandware.static/-/Sites-at-master-catalog/default/dw99284787/images/product/tshirt-vans-classic-boys-boys-blue-3252566018-309-f.png",
+      "model":"DRI-FIT",
       "id": 35,
       "rating": 0,
       "brand_name": "Vans",
@@ -611,6 +646,7 @@
     },
     {
       "image_url": "https://api.reveri.io/api/image/7e212e0a-e410-4a9a-b169-a715503b2d16",
+      "model":"DRI-FIT",
       "id": 36,
       "rating": 0,
       "brand_name": "New Balance",
@@ -628,6 +664,7 @@
     },
     {
       "image_url": "https://doubledoublevintage.com/cdn/shop/products/adidas_ringertee_blackwhite_900x.png?v=1613498657",
+      "model":"FUTURA II",
       "id": 37,
       "rating": 0,
       "brand_name": "Adidas",
@@ -645,6 +682,7 @@
     },
     {
       "image_url": "https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-master-catalog-MAN/default/dw72e75001/images/large/701221263002_pp_01_mcfc.png?sw=800&sh=800&sm=fit",
+      "model":"DRI-FIT",
       "id": 38,
       "rating": 0,
       "brand_name": "Puma",
@@ -662,6 +700,7 @@
     },
     {
       "image_url": "https://static.nike.com/a/images/t_default/75893b6d-345c-4d21-aa25-9b1daa94a4cb/swoosh-womens-soccer-t-shirt-QXNnNH.png",
+      "model":"DRI-FIT",
       "id": 39,
       "rating": 0,
       "brand_name": "Nike",
@@ -679,6 +718,7 @@
     },
     {
       "image_url": "https://cdn.shopify.com/s/files/1/0267/2315/6143/products/s7.PS1377016-676_HF.png?v=1678710261&width=640&height=800&crop=center",
+      "model":"DRI-FIT",
       "id": 40,
       "rating": 0,
       "brand_name": "Under Armour",
