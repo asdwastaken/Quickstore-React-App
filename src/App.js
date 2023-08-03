@@ -3,24 +3,27 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import RoutesComp from './RoutesComp';
 import { SneakerProvider } from './context/sneakersContext';
+import { TshirtProvider } from './context/tShirtsContext';
 
 
 function App() {
 
   return (
     <BrowserRouter>
-      <SneakerProvider>
-        <div className="App">
-          <header>
-            <Navigation />
-          </header>
+      <TshirtProvider>
+        <SneakerProvider>
+          <div className="App">
+            <header>
+              <Navigation />
+            </header>
 
-          <main>
-            <RoutesComp />
-          </main>
+            <main>
+              <RoutesComp />
+            </main>
 
-        </div>
-      </SneakerProvider>
+          </div>
+        </SneakerProvider>
+      </TshirtProvider>
     </BrowserRouter>
   );
 }

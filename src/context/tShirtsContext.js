@@ -2,17 +2,17 @@ import { createContext, useState } from "react";
 import { productRowsFormatter } from "../functions/productRowsFormatter";
 
 
-export const sneakerContext = createContext();
+export const tShirtsContext = createContext();
 
-export const SneakerProvider = ({
+export const TshirtProvider = ({
     children
 }) => {
 
 
-    const [sneakers, setSneakers] = useState([]);
-    const [sneakersMobile, setSneakersMobile] = useState([]);
-    const [allSneakers, setAllSneakers] = useState([]);
-    const [sneakersCount, setSneakersCount] = useState(0);
+    const [tShirts, setTshirts] = useState([]);
+    const [tShirtsMobile, setTshirtsMobile] = useState([]);
+    const [allTshirts, setAllTshirts] = useState([]);
+    const [tShirtsCount, setTshirtsCount] = useState(0);
     const [loadedMore, setLoadedMore] = useState(20);
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
@@ -21,16 +21,17 @@ export const SneakerProvider = ({
 
 
 
-    const [sneakersBrandValues, setSneakersBrandValues] = useState({
+    const [tShirtsBrandValues, setTshirtsBrandValues] = useState({
         Nike: false,
         Adidas: false,
-        "Air Jordan": false,
+        Puma: false,
+        "Under Armour": false,
+        "New Balance": false,
+        Reebok: false,
         Vans: false,
-        Converse: false,
-        Champion: false
     })
 
-    const [sneakersColorValues, setSneakersColorValues] = useState({
+    const [tShirtsColorValues, setTshirtsColorValues] = useState({
         Red: false,
         Blue: false,
         Black: false,
@@ -38,51 +39,51 @@ export const SneakerProvider = ({
         Green: false,
     })
 
-    const [sneakersGenderValues, setSneakersGenderValues] = useState({
+    const [tShirtsGenderValues, setTshirtsGenderValues] = useState({
         men: false,
         women: false,
     })
 
-    const [sneakersSizeValues, setSneakersSizeValues] = useState({
-        "7": false,
-        "8": false,
-        "9": false,
-        "10": false,
-        "11": false,
+    const [tShirtsSizeValues, setTshirtsSizeValues] = useState({
+        "S": false,
+        "M": false,
+        "L": false,
+        "XL": false,
     })
 
 
 
     const onBrandChangeHandler = (e) => {
-        setSneakersBrandValues(state => ({ ...state, [e.target.name]: !state[e.target.name] }));
+        setTshirtsBrandValues(state => ({ ...state, [e.target.name]: !state[e.target.name] }));
     }
 
     const onColorChangeHandler = (e) => {
-        setSneakersColorValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+        setTshirtsColorValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
     };
 
     const onGenderChangeHandler = (e) => {
-        setSneakersGenderValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+        setTshirtsGenderValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
     };
 
     const onSizeChangeHandler = (e) => {
-        setSneakersSizeValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
+        setTshirtsSizeValues((state) => ({ ...state, [e.target.name]: !state[e.target.name] }));
     };
 
 
     const onResetFiltersClick = (e) => {
         e.preventDefault();
 
-        setSneakersBrandValues({
+        setTshirtsBrandValues({
             Nike: false,
             Adidas: false,
-            "Air Jordan": false,
+            Puma: false,
+            "Under Armour": false,
+            "New Balance": false,
+            Reebok: false,
             Vans: false,
-            Champion: false,
-            Converse: false,
         })
 
-        setSneakersColorValues({
+        setTshirtsColorValues({
             Red: false,
             Blue: false,
             Black: false,
@@ -91,17 +92,16 @@ export const SneakerProvider = ({
             White: false,
         })
 
-        setSneakersGenderValues({
+        setTshirtsGenderValues({
             men: false,
             women: false,
         })
 
-        setSneakersSizeValues({
-            "7": false,
-            "8": false,
-            "9": false,
-            "10": false,
-            "11": false,
+        setTshirtsSizeValues({
+            "S": false,
+            "M": false,
+            "L": false,
+            "XL": false,
         })
     }
 
@@ -109,32 +109,32 @@ export const SneakerProvider = ({
 
     const onApplyFiltersClick = (e) => {
         e.preventDefault();
-        let sneakersArray = allSneakers.slice();
+        let tShirtsArray = allTshirts.slice();
         let brandArray = [];
         let colorArray = [];
         let genderArray = [];
         let sizeArray = [];
 
-        const brandEntries = Object.entries(sneakersBrandValues);
-        const brandValues = Object.values(sneakersBrandValues);
-        const colorEntries = Object.entries(sneakersColorValues);
-        const genderEntries = Object.entries(sneakersGenderValues);
-        const sizeEntries = Object.entries(sneakersSizeValues);
+        const brandEntries = Object.entries(tShirtsBrandValues);
+        const brandValues = Object.values(tShirtsBrandValues);
+        const colorEntries = Object.entries(tShirtsColorValues);
+        const genderEntries = Object.entries(tShirtsGenderValues);
+        const sizeEntries = Object.entries(tShirtsSizeValues);
 
         brandEntries.forEach(x => {
             if (x[1] === true) {
-                sneakersArray.map(product => {
+                tShirtsArray.map(product => {
                     if (product.brand_name === x[0]) {
                         brandArray.push(product);
                     }
                 })
 
-                setSneakers(brandArray);
-                setSneakersCount(brandArray.length)
+                setTshirts(brandArray);
+                setTshirtsCount(brandArray.length)
             }
 
             if (brandValues.every(x => x !== true)) {
-                brandArray = sneakersArray;
+                brandArray = tShirtsArray;
                 return brandArray;
             }
         })
@@ -148,8 +148,8 @@ export const SneakerProvider = ({
                     }
                 })
 
-                setSneakers(colorArray);
-                setSneakersCount(colorArray.length)
+                setTshirts(colorArray);
+                setTshirtsCount(colorArray.length)
 
             }
         })
@@ -162,8 +162,8 @@ export const SneakerProvider = ({
                     }
                 })
 
-                setSneakers(genderArray);
-                setSneakersCount(genderArray.length)
+                setTshirts(genderArray);
+                setTshirtsCount(genderArray.length)
 
             }
         })
@@ -177,8 +177,8 @@ export const SneakerProvider = ({
                 })
 
 
-                setSneakers(sizeArray);
-                setSneakersCount(sizeArray.length)
+                setTshirts(sizeArray);
+                setTshirtsCount(sizeArray.length)
 
             }
         })
@@ -187,39 +187,39 @@ export const SneakerProvider = ({
 
 
 
-    const sortSneakers = (option) => {
-        const sortedSneakers = [...sneakers];
+    const sortTshirts = (option) => {
+        const sortedTshirts = [...tShirts];
 
         switch (option) {
 
             case 'alphabetical-ascending':
-                sortedSneakers.sort((a, b) => a.brand_name.localeCompare(b.brand_name));
+                sortedTshirts.sort((a, b) => a.brand_name.localeCompare(b.brand_name));
                 break;
             case 'alphabetical-descending':
-                sortedSneakers.sort((a, b) => b.brand_name.localeCompare(a.brand_name));
+                sortedTshirts.sort((a, b) => b.brand_name.localeCompare(a.brand_name));
                 break;
             case 'price-ascending':
-                sortedSneakers.sort((a, b) => a.price - b.price);
+                sortedTshirts.sort((a, b) => a.price - b.price);
                 break;
             case 'price-descending':
-                sortedSneakers.sort((a, b) => b.price - a.price);
+                sortedTshirts.sort((a, b) => b.price - a.price);
                 break;
             case 'relevance':
-                sortedSneakers.sort((a, b) => b.collection_slugs.length - a.collection_slugs.length);
+                sortedTshirts.sort((a, b) => b.rating - a.rating);
                 break;
             case 'rating':
-                sortedSneakers.sort((a, b) => b.rating - a.rating);
+                sortedTshirts.sort((a, b) => b.rating - a.rating);
                 break;
         }
 
-        setSneakers(sortedSneakers);
+        setTshirts(sortedTshirts);
     };
 
 
     const onSortChangeHandler = (e) => {
         const selectedOption = e.target.value;
         setSelectedOption(selectedOption);
-        sortSneakers(selectedOption);
+        sortTshirts(selectedOption);
 
     }
 
@@ -246,21 +246,21 @@ export const SneakerProvider = ({
     }
 
     const contextValues = {
-        sneakers,
-        setSneakers,
-        sneakersMobile,
-        setSneakersMobile,
-        allSneakers,
-        setAllSneakers,
-        sneakersCount,
+        tShirts,
+        setTshirts,
+        tShirtsMobile,
+        setTshirtsMobile,
+        allTshirts,
+        setAllTshirts,
+        tShirtsCount,
         loadedMore,
         loadedMoreMobile,
         loadMoreProducts,
-        setSneakersCount,
-        sneakersBrandValues,
-        sneakersColorValues,
-        sneakersGenderValues,
-        sneakersSizeValues,
+        setTshirtsCount,
+        tShirtsBrandValues,
+        tShirtsColorValues,
+        tShirtsGenderValues,
+        tShirtsSizeValues,
         onSizeChangeHandler,
         onGenderChangeHandler,
         onBrandChangeHandler,
@@ -278,8 +278,8 @@ export const SneakerProvider = ({
 
 
     return (
-        <sneakerContext.Provider value={contextValues}>
+        <tShirtsContext.Provider value={contextValues}>
             {children}
-        </sneakerContext.Provider>
+        </tShirtsContext.Provider>
     )
 }
