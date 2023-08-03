@@ -49,9 +49,21 @@ export default function TshirtsMenus() {
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues["Air Jordan"]} value={tShirtsBrandValues["Air Jordan"]} onChange={onBrandChangeHandler} name="Air Jordan" />
-                                        <label className="form-check-label" htmlFor="Air Jordan">
-                                            Air Jordan
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues.Puma} value={tShirtsBrandValues.Puma} onChange={onBrandChangeHandler} name="Puma" />
+                                        <label className="form-check-label" htmlFor="Puma">
+                                            Puma
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues["New Balance"]} value={tShirtsBrandValues["New Balance"]} onChange={onBrandChangeHandler} name="New Balance" />
+                                        <label className="form-check-label" htmlFor="New Balance">
+                                            New Balance
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues["Under Armour"]} value={tShirtsBrandValues["Under Armour"]} onChange={onBrandChangeHandler} name="Under Armour" />
+                                        <label className="form-check-label" htmlFor="Under Armour">
+                                            Under Armour
                                         </label>
                                     </div>
                                     <div className="form-check">
@@ -61,9 +73,9 @@ export default function TshirtsMenus() {
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues.Champion} value={tShirtsBrandValues.Champion} onChange={onBrandChangeHandler} name="Champion" />
-                                        <label className="form-check-label" htmlFor="Champion">
-                                            Champion
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsBrandValues.Reebok} value={tShirtsBrandValues.Reebok} onChange={onBrandChangeHandler} name="Reebok" />
+                                        <label className="form-check-label" htmlFor="Reebok">
+                                            Reebok
                                         </label>
                                     </div>
                                     <div className="form-check">
@@ -115,6 +127,19 @@ export default function TshirtsMenus() {
                                             White
                                         </label>
                                     </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsColorValues.Beige} value={tShirtsColorValues.Beige} onChange={onColorChangeHandler} name="Beige" />
+                                        <label className="form-check-label" htmlFor="Beige">
+                                            Beige
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={tShirtsColorValues.Gray} value={tShirtsColorValues.Gray} onChange={onColorChangeHandler} name="Gray" />
+                                        <label className="form-check-label" htmlFor="Gray">
+                                            Gray
+                                        </label>
+                                    </div>
+
                                 </ul>
                             </li>
 
@@ -142,25 +167,25 @@ export default function TshirtsMenus() {
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" checked={tShirtsSizeValues["S"]} value={tShirtsSizeValues["S"]} onChange={onSizeChangeHandler} name="S" />
                                         <label className="form-check-label" htmlFor="S">
-                                            7
+                                            S
                                         </label>
                                     </div>
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" checked={tShirtsSizeValues["M"]} value={tShirtsSizeValues["M"]} onChange={onSizeChangeHandler} name="M" />
                                         <label className="form-check-label" htmlFor="M">
-                                            8
+                                            M
                                         </label>
                                     </div>
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" checked={tShirtsSizeValues["L"]} value={tShirtsSizeValues["L"]} onChange={onSizeChangeHandler} name="L" />
                                         <label className="form-check-label" htmlFor="L">
-                                            9
+                                            L
                                         </label>
                                     </div>
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" checked={tShirtsSizeValues["XL"]} value={tShirtsSizeValues["XL"]} onChange={onSizeChangeHandler} name="XL" />
                                         <label className="form-check-label" htmlFor="XL">
-                                            10
+                                            XL
                                         </label>
                                     </div>
                                    

@@ -90,6 +90,8 @@ export const TshirtProvider = ({
             Yellow: false,
             Green: false,
             White: false,
+            Gray: false,
+            Beige: false,
         })
 
         setTshirtsGenderValues({
