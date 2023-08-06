@@ -2,7 +2,7 @@
     "shorts": [
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://static.nike.com/a/images/t_default/d9354e2b-8bf3-492e-9443-a774d5b3126e/dri-fit-womens-running-shorts-9MXHDQ.png",
             "model": "Athletic Shorts",
             "id": 1,
             "rating": 4,
@@ -21,13 +21,13 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://cms.sportmaster.dk/sites/default/files/styles/product_small/public/PIM-images/adidas/2113146/adidas-must-haves-badge-of-sport-pocket-shorts-bla-v1-594056.png",
             "model": "Performance Shorts",
             "id": 2,
             "rating": 4,
             "brand_name": "Adidas",
             "price": 3000,
-            "color": "Navy Blue",
+            "color": "Black",
             "gender": [
                 "men"
             ],
@@ -40,7 +40,7 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://shop.sportsbasement.com/cdn/shop/products/100252006_BLK_1_grande.png?v=1674517155",
             "model": "Training Shorts",
             "id": 3,
             "rating": 5,
@@ -59,12 +59,69 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://rjmsports.com/wp-content/uploads/2022/07/704262-18-3QF.png",
             "model": "Casual Shorts",
             "id": 4,
             "rating": 3,
             "brand_name": "Puma",
             "price": 2500,
+            "color": "Blue",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "https://res.cloudinary.com/hartville-hardware/image/upload/d_nopicture_tn.png/f_auto,q_auto,fl_lossy,w_458,h_458,c_fit/Products/1671623.jpg",
+            "model": "Sporty Shorts",
+            "id": 5,
+            "rating": 4,
+            "brand_name": "Under Armour",
+            "price": 3200,
+            "color": "Gray",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "https://www.magic-custom.com/14702-large_product/tovaritch-short-homme.jpg",
+            "model": "Summer Shorts",
+            "id": 6,
+            "rating": 4,
+            "brand_name": "Vans",
+            "price": 2200,
+            "color": "Black",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "https://images.media-arocam.com/df5UQdn3kBL1jEU7lWSnyc6aXos=/fit-in/450x450/W28512/WLF/hhAKTusP_WLF.png",
+            "model": "Classic Shorts",
+            "id": 7,
+            "rating": 5,
+            "brand_name": "Nike",
+            "price": 2800,
             "color": "Gray",
             "gender": [
                 "men"
@@ -78,64 +135,7 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
-            "model": "Sporty Shorts",
-            "id": 5,
-            "rating": 4,
-            "brand_name": "Under Armour",
-            "price": 3200,
-            "color": "White",
-            "gender": [
-                "men"
-            ],
-            "size_range": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ]
-        },
-        {
-            "discounted_price": true,
-            "image_url": "",
-            "model": "Summer Shorts",
-            "id": 6,
-            "rating": 4,
-            "brand_name": "Vans",
-            "price": 2200,
-            "color": "Blue",
-            "gender": [
-                "men"
-            ],
-            "size_range": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ]
-        },
-        {
-            "discounted_price": true,
-            "image_url": "",
-            "model": "Classic Shorts",
-            "id": 7,
-            "rating": 5,
-            "brand_name": "Nike",
-            "price": 2800,
-            "color": "Black",
-            "gender": [
-                "men"
-            ],
-            "size_range": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ]
-        },
-        {
-            "discounted_price": false,
-            "image_url": "",
+            "image_url": "https://moesportsnyc.com/cdn/shop/products/shopping_72c0a07e-911a-421c-a1f8-e37a2cff77d7_2048x2048.png?v=1579624753",
             "model": "Cargo Shorts",
             "id": 8,
             "rating": 3,
@@ -154,13 +154,13 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://www.worldshop.eu/medias/sys_master/h0a/h62/8911361310750.png",
             "model": "Printed Shorts",
             "id": 9,
             "rating": 4,
             "brand_name": "Tommy Hilfiger",
             "price": 3600,
-            "color": "Red",
+            "color": "Blue",
             "gender": [
                 "men"
             ],
@@ -173,13 +173,13 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
+            "image_url": "https://www.kitking.co.uk/cdn/shop/products/704936-01-3QF_700x700.png?v=1647868274",
             "model": "Soccer Shorts",
             "id": 10,
             "rating": 5,
             "brand_name": "Puma",
             "price": 2800,
-            "color": "Green",
+            "color": "Red",
             "gender": [
                 "men"
             ],
@@ -192,7 +192,7 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://shop.navi.gg/files/resized/products/navi54574.650x622.png",
             "model": "Logo Shorts",
             "id": 11,
             "rating": 4,
@@ -211,7 +211,7 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://teamlocker-cache.s3.amazonaws.com/teamlocker/stores/318516/13bf8b80-7714-46d7-95bc-3421501a286e.png",
             "model": "Running Shorts",
             "id": 12,
             "rating": 4,
@@ -230,13 +230,13 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
+            "image_url": "https://cdn.shoplightspeed.com/shops/607439/files/42664516/782x1000x1/quiksilver-eqybs04531-boardshorts-men-19-quiksilve.jpg",
             "model": "Beach Shorts",
             "id": 13,
             "rating": 3,
             "brand_name": "Quiksilver",
             "price": 2600,
-            "color": "Turquoise",
+            "color": "Green",
             "gender": [
                 "men"
             ],
@@ -249,7 +249,7 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://kicksmaniac.com/zdjecia/2019/07/26/107/15/9465AV3211_010_PHSFH001_2000.png",
             "model": "Street Style Shorts",
             "id": 14,
             "rating": 4,
@@ -268,13 +268,13 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://eurosport.com.mt/images/thumbs/0181612_training-camo-woven-shorts_500.png",
             "model": "Gym Shorts",
             "id": 15,
             "rating": 4,
             "brand_name": "Reebok",
             "price": 2900,
-            "color": "Dark Gray",
+            "color": "Khaki",
             "gender": [
                 "men"
             ],
@@ -287,13 +287,13 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
+            "image_url": "https://i.ebayimg.com/images/g/My8AAOSwjaBgHXmH/s-l1200.webp",
             "model": "Plaid Shorts",
             "id": 16,
             "rating": 3,
             "brand_name": "Dockers",
             "price": 3200,
-            "color": "Navy Blue",
+            "color": "Black",
             "gender": [
                 "men"
             ],
@@ -306,13 +306,13 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
+            "image_url": "https://greysonclothiers.com/cdn/shop/files/MFA23B20_826_1.png?v=1690299948&width=720",
             "model": "Linen Shorts",
             "id": 17,
             "rating": 4,
             "brand_name": "Bonobos",
             "price": 4200,
-            "color": "Beige",
+            "color": "Blue",
             "gender": [
                 "men"
             ],
@@ -325,7 +325,7 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://static.nike.com/a/images/t_default/32ceea36-e0b1-4907-8ebd-88ea405132ce/sportswear-club-fleece-mens-football-shorts-n7LqQ7.png",
             "model": "Mesh Shorts",
             "id": 18,
             "rating": 4,
@@ -344,8 +344,8 @@
         },
         {
             "discounted_price": false,
-            "image_url": "",
-            "model": "Striped Shorts",
+            "image_url": "https://cdn.shoplightspeed.com/shops/636502/files/54453299/800x800x3/vans-range-relaxed-elastic-18-shorts-checkerboard.jpg",
+            "model": "Checkerboard Shorts",
             "id": 19,
             "rating": 3,
             "brand_name": "Vans",
@@ -363,13 +363,13 @@
         },
         {
             "discounted_price": true,
-            "image_url": "",
+            "image_url": "https://designersonadime.com/cdn/shop/products/20181011_095835_grande_copy_large_copy_550x.png?v=1681242181",
             "model": "Chino Shorts",
             "id": 20,
             "rating": 4,
             "brand_name": "Tommy Bahama",
             "price": 3800,
-            "color": "Light Khaki",
+            "color": "Khaki",
             "gender": [
                 "men"
             ],
