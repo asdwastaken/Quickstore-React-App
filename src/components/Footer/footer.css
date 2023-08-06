@@ -25,3 +25,21 @@
 .footer-link:hover {
     color: #FF7F00;
 }
+
+
+@media screen and (max-width:680px) {
+
+    .footer{
+        height: 120px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .footer-link{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
