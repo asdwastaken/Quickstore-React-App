@@ -14,20 +14,25 @@ export default function Navigation() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/"><img src={logo} className="nav-logo" /></Link>
                 {mobileMenu
                     ?
-                    <div className="nav-links-container-mobile">
-                        <Link to="/" className="nav-link" onClick={onMenuClick}>Sneakers</Link>
-                        <Link to="/t-shirts" className="nav-link" onClick={onMenuClick}>T-Shirts</Link>
-                        <Link to="/shorts" className="nav-link" onClick={onMenuClick} >Shorts</Link>
-                    </div>
+                    <>
+                        <Link to="/"><img src={logo} className="nav-logo" onClick={onMenuClick} /></Link>
+                        <div className="nav-links-container-mobile">
+                            <Link to="/" className="nav-link" onClick={onMenuClick}>Sneakers</Link>
+                            <Link to="/t-shirts" className="nav-link" onClick={onMenuClick}>T-Shirts</Link>
+                            <Link to="/shorts" className="nav-link" onClick={onMenuClick} >Shorts</Link>
+                        </div>
+                    </>
                     :
-                    <div className="nav-links-container">
-                        <Link to="/" className="nav-link" >Sneakers</Link>
-                        <Link to="/t-shirts" className="nav-link" >T-Shirts</Link>
-                        <Link to="/shorts" className="nav-link" >Shorts</Link>
-                    </div>
+                    <>
+                        <Link to="/"><img src={logo} className="nav-logo"/></Link>
+                        <div className="nav-links-container">
+                            <Link to="/" className="nav-link" >Sneakers</Link>
+                            <Link to="/t-shirts" className="nav-link" >T-Shirts</Link>
+                            <Link to="/shorts" className="nav-link" >Shorts</Link>
+                        </div>
+                    </>
                 }
 
 
