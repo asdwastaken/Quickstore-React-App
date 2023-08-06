@@ -227,18 +227,18 @@ export const TshirtProvider = ({
 
 
 
-    const likeProduct = (productName) => {
-        alert(`You liked ${productName}!`);
-        setLikedProducts((state) => [...state, productName])
+    const likeProduct = (brand, model, productId) => {
+        alert(`You liked ${brand} ${model}!`);
+        setLikedProducts((state) => [...state, productId])
     }
 
-    const unlikeProduct = (productName) => {
-        alert(`You unliked ${productName}!`);
-        setLikedProducts((state) => state.filter(x => x !== productName))
+    const unlikeProduct = (brand, model, productId) => {
+        alert(`You unliked ${brand} ${model}!`);
+        setLikedProducts((state) => state.filter(x => x !== productId))
     }
 
-    const addToCart = (productName) => {
-        alert(`${productName} has been added to your cart!`)
+    const addToCart = (brand, model, productId) => {
+        alert(`${brand} ${model} has been added to your cart!`)
     }
 
 
