@@ -43,6 +43,12 @@ export default function ShortsMenus() {
                                         </label>
                                     </div>
                                     <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Jordan} value={shortsBrandValues.Jordan} onChange={onBrandChangeHandler} name="Jordan" />
+                                        <label className="form-check-label" htmlFor="Jordan">
+                                            Jordan
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
                                         <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Adidas} value={shortsBrandValues.Adidas} onChange={onBrandChangeHandler} name="Adidas" />
                                         <label className="form-check-label" htmlFor="Adidas">
                                             Adidas
@@ -78,13 +84,48 @@ export default function ShortsMenus() {
                                             Reebok
                                         </label>
                                     </div>
+                                    
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Converse} value={shortsBrandValues.Converse} onChange={onBrandChangeHandler} name="Converse" />
-                                        <label className="form-check-label" htmlFor="Converse">
-                                            Converse
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues["Levi's"]} value={shortsBrandValues["Levi's"]} onChange={onBrandChangeHandler} name="Levi's" />
+                                        <label className="form-check-label" htmlFor="Levi's">
+                                            Levi's
                                         </label>
                                     </div>
 
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues["Tommy Hilfiger"]} value={shortsBrandValues["Tommy Hilfiger"]} onChange={onBrandChangeHandler} name="Tommy Hilfiger" />
+                                        <label className="form-check-label" htmlFor="Tommy Hilfiger">
+                                            Tommy Hilfiger
+                                        </label>
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Quicksilver} value={shortsBrandValues.Quiksilver} onChange={onBrandChangeHandler} name="Quiksilver" />
+                                        <label className="form-check-label" htmlFor="Quiksilver">
+                                            Quiksilver
+                                        </label>
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Dockers} value={shortsBrandValues.Dockers} onChange={onBrandChangeHandler} name="Dockers" />
+                                        <label className="form-check-label" htmlFor="Dockers">
+                                            Dockers
+                                        </label>
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues.Bonobos} value={shortsBrandValues.Bonobos} onChange={onBrandChangeHandler} name="Bonobos" />
+                                        <label className="form-check-label" htmlFor="Bonobos">
+                                            Bonobos
+                                        </label>
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsBrandValues["Tommy Bahama"]} value={shortsBrandValues["Tommy Bahama"]} onChange={onBrandChangeHandler} name="Tommy Bahama" />
+                                        <label className="form-check-label" htmlFor="Tommy Bahama">
+                                            Tommy Bahama
+                                        </label>
+                                    </div>
+                                    
                                 </ul>
                             </li>
 

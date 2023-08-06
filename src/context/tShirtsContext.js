@@ -131,7 +131,7 @@ export const TshirtProvider = ({
                     }
                 })
 
-                setTshirts(brandArray);
+                setTshirtsMobile(brandArray);
                 setTshirtsCount(brandArray.length)
             }
 
@@ -150,7 +150,7 @@ export const TshirtProvider = ({
                     }
                 })
 
-                setTshirts(colorArray);
+                setTshirtsMobile(colorArray);
                 setTshirtsCount(colorArray.length)
 
             }
@@ -164,7 +164,7 @@ export const TshirtProvider = ({
                     }
                 })
 
-                setTshirts(genderArray);
+                setTshirtsMobile(genderArray);
                 setTshirtsCount(genderArray.length)
 
             }
@@ -179,7 +179,7 @@ export const TshirtProvider = ({
                 })
 
 
-                setTshirts(sizeArray);
+                setTshirtsMobile(sizeArray);
                 setTshirtsCount(sizeArray.length)
 
             }

@@ -130,6 +130,7 @@ export const SneakerProvider = ({
                 })
 
                 setSneakers(brandArray);
+                setSneakersMobile(brandArray);
                 setSneakersCount(brandArray.length)
             }
 
@@ -148,7 +149,7 @@ export const SneakerProvider = ({
                     }
                 })
 
-                setSneakers(colorArray);
+                setSneakersMobile(colorArray);
                 setSneakersCount(colorArray.length)
 
             }
@@ -162,7 +163,7 @@ export const SneakerProvider = ({
                     }
                 })
 
-                setSneakers(genderArray);
+                setSneakersMobile(genderArray);
                 setSneakersCount(genderArray.length)
 
             }
@@ -177,7 +178,7 @@ export const SneakerProvider = ({
                 })
 
 
-                setSneakers(sizeArray);
+                setSneakersMobile(sizeArray);
                 setSneakersCount(sizeArray.length)
 
             }

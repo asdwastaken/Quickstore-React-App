@@ -22,12 +22,18 @@ export const ShortsProvider = ({
 
     const [shortsBrandValues, setShortsBrandValues] = useState({
         Nike: false,
+        Jordan: false,
         Adidas: false,
         Puma: false,
         "Under Armour": false,
         "New Balance": false,
         Reebok: false,
         Vans: false,
+        "Tommy Hilfiger": false,
+        "Tommy Bahama": false,
+        Dockers: false,
+        Quiksilver: false,
+        Bonobos: false,
     })
 
     const [shortsColorValues, setShortsColorValues] = useState({
@@ -74,12 +80,18 @@ export const ShortsProvider = ({
 
         setShortsBrandValues({
             Nike: false,
+            Jordan: false,
             Adidas: false,
             Puma: false,
             "Under Armour": false,
             "New Balance": false,
             Reebok: false,
             Vans: false,
+            "Tommy Hilfiger": false,
+            "Tommy Bahama": false,
+            Dockers: false,
+            Quiksilver: false,
+            Bonobos: false,
         })
 
         setShortsColorValues({
@@ -130,7 +142,7 @@ export const ShortsProvider = ({
                     }
                 })
 
-                setShorts(brandArray);
+                setShortsMobile(brandArray);
                 setShortsCount(brandArray.length)
             }
 
@@ -149,7 +161,7 @@ export const ShortsProvider = ({
                     }
                 })
 
-                setShorts(colorArray);
+                setShortsMobile(colorArray);
                 setShortsCount(colorArray.length)
 
             }
@@ -163,7 +175,7 @@ export const ShortsProvider = ({
                     }
                 })
 
-                setShorts(genderArray);
+                setShortsMobile(genderArray);
                 setShortsCount(genderArray.length)
 
             }
@@ -178,7 +190,7 @@ export const ShortsProvider = ({
                 })
 
 
-                setShorts(sizeArray);
+                setShortsMobile(sizeArray);
                 setShortsCount(sizeArray.length)
 
             }

@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(53deg, rgba(248,117,65,1) 20%, rgba(180,179,174,1) 70%);
+    background: linear-gradient(53deg, rgba(248, 117, 65, 1) 20%, rgba(180, 179, 174, 1) 70%);
     z-index: 2;
 }
 
@@ -35,6 +35,7 @@
     display: flex;
     justify-content: center;
     padding-top: 15px;
+    z-index: 0;
 }
 
 .home-t-shirts-image-container::after {
@@ -52,6 +53,8 @@
 .home-t-shirts-products-container {
     padding-left: 20px;
     padding-right: 20px;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -275,6 +278,8 @@
     color: white;
 
 }
+
+
 
 @media screen and (max-width:1350px) {
 
@@ -730,9 +735,9 @@
 
 @media screen and (max-width:960px) {
 
-.home-t-shirts-image-container{
-    width: 180px;
-}
+    .home-t-shirts-image-container {
+        width: 180px;
+    }
 
     .home-image-t-shirt {
         width: 300px;
@@ -751,7 +756,7 @@
 
 @media screen and (max-width:600px) {
 
-    .home-t-shirts-image-container{
+    .home-t-shirts-image-container {
         width: 150px;
     }
 
@@ -774,7 +779,7 @@
 
 @media screen and (max-width:520px) {
 
-    .home-t-shirts-image-container{
+    .home-t-shirts-image-container {
         padding-top: 10px;
     }
 
@@ -793,10 +798,11 @@
 
 @media screen and (max-width:450px) {
 
-    .home-t-shirts-image-container{
+    .home-t-shirts-image-container {
         padding-top: 5px;
         width: 130px;
     }
+
     .home-image-t-shirt {
         width: 200px;
         height: 130px;
@@ -812,7 +818,7 @@
 
 @media screen and (max-width:400px) {
 
-    .home-t-shirts-image-container{
+    .home-t-shirts-image-container {
         width: 110px;
     }
 
