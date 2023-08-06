@@ -1,0 +1,27 @@
+.footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 60px;
+    border-top: 1px solid rgb(50, 50, 50);
+    background-color: rgb(240, 240, 240);
+    margin-top: 60px;
+}
+
+.footer-container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}
+
+
+.footer-link:hover {
+    color: #FF7F00;
+}

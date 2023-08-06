@@ -8,6 +8,7 @@ import HomeMenus from './HomeMenus';
 import HomeProductsGrid from './HomeProductsGrid';
 import HomeProductsGridMobile from './HomeProductsGridMobile';
 import { productRowsFormatter } from '../../functions/productRowsFormatter';
+import Footer from '../Footer/Footer';
 
 export default function Home() {
 
@@ -75,6 +76,8 @@ export default function Home() {
                         onClick={loadMoreProducts}>Load More
                     </button>
                 </div>
+
+                <Footer />
 
             </div >
         </div >
