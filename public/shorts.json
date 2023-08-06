@@ -1,387 +1,383 @@
 {
     "shorts": [
         {
-            "shorts": [
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Athletic Shorts",
-                    "id": 1,
-                    "rating": 4,
-                    "brand_name": "Nike",
-                    "price": 3500,
-                    "color": "Black",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Performance Shorts",
-                    "id": 2,
-                    "rating": 4,
-                    "brand_name": "Adidas",
-                    "price": 3000,
-                    "color": "Navy Blue",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Training Shorts",
-                    "id": 3,
-                    "rating": 5,
-                    "brand_name": "Under Armour",
-                    "price": 2800,
-                    "color": "Black",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Casual Shorts",
-                    "id": 4,
-                    "rating": 3,
-                    "brand_name": "Puma",
-                    "price": 2500,
-                    "color": "Gray",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Sporty Shorts",
-                    "id": 5,
-                    "rating": 4,
-                    "brand_name": "Under Armour",
-                    "price": 3200,
-                    "color": "White",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Summer Shorts",
-                    "id": 6,
-                    "rating": 4,
-                    "brand_name": "Vans",
-                    "price": 2200,
-                    "color": "Blue",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Classic Shorts",
-                    "id": 7,
-                    "rating": 5,
-                    "brand_name": "Nike",
-                    "price": 2800,
-                    "color": "Black",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Cargo Shorts",
-                    "id": 8,
-                    "rating": 3,
-                    "brand_name": "Levi's",
-                    "price": 4000,
-                    "color": "Khaki",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Printed Shorts",
-                    "id": 9,
-                    "rating": 4,
-                    "brand_name": "Tommy Hilfiger",
-                    "price": 3600,
-                    "color": "Red",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Soccer Shorts",
-                    "id": 10,
-                    "rating": 5,
-                    "brand_name": "Puma",
-                    "price": 2800,
-                    "color": "Green",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Logo Shorts",
-                    "id": 11,
-                    "rating": 4,
-                    "brand_name": "Puma",
-                    "price": 2400,
-                    "color": "Black",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Running Shorts",
-                    "id": 12,
-                    "rating": 4,
-                    "brand_name": "New Balance",
-                    "price": 3200,
-                    "color": "Gray",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Beach Shorts",
-                    "id": 13,
-                    "rating": 3,
-                    "brand_name": "Quiksilver",
-                    "price": 2600,
-                    "color": "Turquoise",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Street Style Shorts",
-                    "id": 14,
-                    "rating": 4,
-                    "brand_name": "Jordan",
-                    "price": 3800,
-                    "color": "White",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Gym Shorts",
-                    "id": 15,
-                    "rating": 4,
-                    "brand_name": "Reebok",
-                    "price": 2900,
-                    "color": "Dark Gray",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Plaid Shorts",
-                    "id": 16,
-                    "rating": 3,
-                    "brand_name": "Dockers",
-                    "price": 3200,
-                    "color": "Navy Blue",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Linen Shorts",
-                    "id": 17,
-                    "rating": 4,
-                    "brand_name": "Bonobos",
-                    "price": 4200,
-                    "color": "Beige",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Mesh Shorts",
-                    "id": 18,
-                    "rating": 4,
-                    "brand_name": "Nike",
-                    "price": 2600,
-                    "color": "Gray",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": false,
-                    "image_url": "",
-                    "model": "Striped Shorts",
-                    "id": 19,
-                    "rating": 3,
-                    "brand_name": "Vans",
-                    "price": 2900,
-                    "color": "White",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                },
-                {
-                    "discounted_price": true,
-                    "image_url": "",
-                    "model": "Chino Shorts",
-                    "id": 20,
-                    "rating": 4,
-                    "brand_name": "Tommy Bahama",
-                    "price": 3800,
-                    "color": "Light Khaki",
-                    "gender": [
-                        "men"
-                    ],
-                    "size_range": [
-                        "S",
-                        "M",
-                        "L",
-                        "XL"
-                    ]
-                }
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Athletic Shorts",
+            "id": 1,
+            "rating": 4,
+            "brand_name": "Nike",
+            "price": 3500,
+            "color": "Black",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Performance Shorts",
+            "id": 2,
+            "rating": 4,
+            "brand_name": "Adidas",
+            "price": 3000,
+            "color": "Navy Blue",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Training Shorts",
+            "id": 3,
+            "rating": 5,
+            "brand_name": "Under Armour",
+            "price": 2800,
+            "color": "Black",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Casual Shorts",
+            "id": 4,
+            "rating": 3,
+            "brand_name": "Puma",
+            "price": 2500,
+            "color": "Gray",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Sporty Shorts",
+            "id": 5,
+            "rating": 4,
+            "brand_name": "Under Armour",
+            "price": 3200,
+            "color": "White",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Summer Shorts",
+            "id": 6,
+            "rating": 4,
+            "brand_name": "Vans",
+            "price": 2200,
+            "color": "Blue",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Classic Shorts",
+            "id": 7,
+            "rating": 5,
+            "brand_name": "Nike",
+            "price": 2800,
+            "color": "Black",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Cargo Shorts",
+            "id": 8,
+            "rating": 3,
+            "brand_name": "Levi's",
+            "price": 4000,
+            "color": "Khaki",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Printed Shorts",
+            "id": 9,
+            "rating": 4,
+            "brand_name": "Tommy Hilfiger",
+            "price": 3600,
+            "color": "Red",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Soccer Shorts",
+            "id": 10,
+            "rating": 5,
+            "brand_name": "Puma",
+            "price": 2800,
+            "color": "Green",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Logo Shorts",
+            "id": 11,
+            "rating": 4,
+            "brand_name": "Puma",
+            "price": 2400,
+            "color": "Black",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Running Shorts",
+            "id": 12,
+            "rating": 4,
+            "brand_name": "New Balance",
+            "price": 3200,
+            "color": "Gray",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Beach Shorts",
+            "id": 13,
+            "rating": 3,
+            "brand_name": "Quiksilver",
+            "price": 2600,
+            "color": "Turquoise",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Street Style Shorts",
+            "id": 14,
+            "rating": 4,
+            "brand_name": "Jordan",
+            "price": 3800,
+            "color": "White",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Gym Shorts",
+            "id": 15,
+            "rating": 4,
+            "brand_name": "Reebok",
+            "price": 2900,
+            "color": "Dark Gray",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Plaid Shorts",
+            "id": 16,
+            "rating": 3,
+            "brand_name": "Dockers",
+            "price": 3200,
+            "color": "Navy Blue",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Linen Shorts",
+            "id": 17,
+            "rating": 4,
+            "brand_name": "Bonobos",
+            "price": 4200,
+            "color": "Beige",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Mesh Shorts",
+            "id": 18,
+            "rating": 4,
+            "brand_name": "Nike",
+            "price": 2600,
+            "color": "Gray",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": false,
+            "image_url": "",
+            "model": "Striped Shorts",
+            "id": 19,
+            "rating": 3,
+            "brand_name": "Vans",
+            "price": 2900,
+            "color": "White",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
+        },
+        {
+            "discounted_price": true,
+            "image_url": "",
+            "model": "Chino Shorts",
+            "id": 20,
+            "rating": 4,
+            "brand_name": "Tommy Bahama",
+            "price": 3800,
+            "color": "Light Khaki",
+            "gender": [
+                "men"
+            ],
+            "size_range": [
+                "S",
+                "M",
+                "L",
+                "XL"
             ]
         }
     ]

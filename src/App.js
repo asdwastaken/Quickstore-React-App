@@ -4,26 +4,29 @@ import Navigation from './components/Navigation/Navigation';
 import RoutesComp from './RoutesComp';
 import { SneakerProvider } from './context/sneakersContext';
 import { TshirtProvider } from './context/tShirtsContext';
+import { ShortsProvider } from './context/shortsContext';
 
 
 function App() {
 
   return (
     <BrowserRouter>
-      <TshirtProvider>
-        <SneakerProvider>
-          <div className="App">
-            <header>
-              <Navigation />
-            </header>
+      <ShortsProvider>
+        <TshirtProvider>
+          <SneakerProvider>
+            <div className="App">
+              <header>
+                <Navigation />
+              </header>
 
-            <main>
-              <RoutesComp />
-            </main>
+              <main>
+                <RoutesComp />
+              </main>
 
-          </div>
-        </SneakerProvider>
-      </TshirtProvider>
+            </div>
+          </SneakerProvider>
+        </TshirtProvider>
+      </ShortsProvider>
     </BrowserRouter>
   );
 }
