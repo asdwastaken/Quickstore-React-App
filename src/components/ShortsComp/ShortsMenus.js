@@ -181,6 +181,13 @@ export default function ShortsMenus() {
                                         </label>
                                     </div>
 
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={shortsColorValues.Khaki} value={shortsColorValues.Khaki} onChange={onColorChangeHandler} name="Khaki" />
+                                        <label className="form-check-label" htmlFor="Khaki">
+                                            Khaki
+                                        </label>
+                                    </div>
+
                                 </ul>
                             </li>
 

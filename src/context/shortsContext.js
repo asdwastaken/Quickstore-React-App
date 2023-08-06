@@ -42,6 +42,10 @@ export const ShortsProvider = ({
         Black: false,
         Yellow: false,
         Green: false,
+        White: false,
+        Gray: false,
+        Beige: false,
+        Khaki: false,
     })
 
     const [shortsGenderValues, setShortsGenderValues] = useState({
@@ -103,6 +107,7 @@ export const ShortsProvider = ({
             White: false,
             Gray: false,
             Beige: false,
+            Khaki: false,
         })
 
         setShortsGenderValues({
@@ -141,7 +146,7 @@ export const ShortsProvider = ({
                         brandArray.push(product);
                     }
                 })
-
+                setShorts(brandArray);
                 setShortsMobile(brandArray);
                 setShortsCount(brandArray.length)
             }
@@ -161,6 +166,7 @@ export const ShortsProvider = ({
                     }
                 })
 
+                setShorts(colorArray);
                 setShortsMobile(colorArray);
                 setShortsCount(colorArray.length)
 
@@ -174,7 +180,7 @@ export const ShortsProvider = ({
                         genderArray.push(product);
                     }
                 })
-
+                setShorts(genderArray);
                 setShortsMobile(genderArray);
                 setShortsCount(genderArray.length)
 
@@ -189,7 +195,7 @@ export const ShortsProvider = ({
                     }
                 })
 
-
+                setShorts(sizeArray);
                 setShortsMobile(sizeArray);
                 setShortsCount(sizeArray.length)
 

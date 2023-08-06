@@ -37,6 +37,9 @@ export const TshirtProvider = ({
         Black: false,
         Yellow: false,
         Green: false,
+        White: false,
+        Gray: false,
+        Beige: false,
     })
 
     const [tShirtsGenderValues, setTshirtsGenderValues] = useState({
