@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { productRowsFormatter } from "../functions/productRowsFormatter";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 
 export const tShirtsContext = createContext();
@@ -16,7 +16,8 @@ export const TshirtProvider = ({
     const [loadedMore, setLoadedMore] = useState(20);
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
-    const [likedProducts, setLikedProducts] = useState([]);
+    const [likedTShirts, setLikedTShirts] = useLocalStorage('likedTShirts', []);
+
 
 
 
@@ -133,7 +134,7 @@ export const TshirtProvider = ({
                         brandArray.push(product);
                     }
                 })
-
+                setTshirts(brandArray);
                 setTshirtsMobile(brandArray);
                 setTshirtsCount(brandArray.length)
             }
@@ -152,6 +153,7 @@ export const TshirtProvider = ({
                         colorArray.push(product);
                     }
                 })
+                setTshirts(colorArray);
 
                 setTshirtsMobile(colorArray);
                 setTshirtsCount(colorArray.length)
@@ -166,6 +168,7 @@ export const TshirtProvider = ({
                         genderArray.push(product);
                     }
                 })
+                setTshirts(genderArray);
 
                 setTshirtsMobile(genderArray);
                 setTshirtsCount(genderArray.length)
@@ -181,6 +184,7 @@ export const TshirtProvider = ({
                     }
                 })
 
+                setTshirts(sizeArray);
 
                 setTshirtsMobile(sizeArray);
                 setTshirtsCount(sizeArray.length)
@@ -232,12 +236,14 @@ export const TshirtProvider = ({
 
     const likeProduct = (brand, model, productId) => {
         alert(`You liked ${brand} ${model}!`);
-        setLikedProducts((state) => [...state, productId])
+        setLikedTShirts(productId);
     }
 
     const unlikeProduct = (brand, model, productId) => {
         alert(`You unliked ${brand} ${model}!`);
-        setLikedProducts((state) => state.filter(x => x !== productId))
+        const filteredProducts = likedTShirts.filter(product => product !== productId);
+
+        setLikedTShirts(productId, filteredProducts);
     }
 
     const addToCart = (brand, model, productId) => {
@@ -275,7 +281,7 @@ export const TshirtProvider = ({
         likeProduct,
         unlikeProduct,
         addToCart,
-        likedProducts,
+        likedTShirts,
         onResetFiltersClick,
         onApplyFiltersClick
     }

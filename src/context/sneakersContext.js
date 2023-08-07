@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { productRowsFormatter } from "../functions/productRowsFormatter";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 
 export const sneakerContext = createContext();
@@ -16,7 +16,7 @@ export const SneakerProvider = ({
     const [loadedMore, setLoadedMore] = useState(20);
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
-    const [likedProducts, setLikedProducts] = useState([]);
+    const [likedSneakers, setLikedSneakers] = useLocalStorage('likedSneakers', []);
 
 
 
@@ -115,8 +115,12 @@ export const SneakerProvider = ({
         let genderArray = [];
         let sizeArray = [];
 
-        const brandEntries = Object.entries(sneakersBrandValues);
         const brandValues = Object.values(sneakersBrandValues);
+        const colorValues = Object.values(sneakersColorValues);
+        const genderValues = Object.values(sneakersGenderValues);
+        const sizeValues = Object.values(sneakersSizeValues);
+
+        const brandEntries = Object.entries(sneakersBrandValues);
         const colorEntries = Object.entries(sneakersColorValues);
         const genderEntries = Object.entries(sneakersGenderValues);
         const sizeEntries = Object.entries(sneakersSizeValues);
@@ -148,10 +152,16 @@ export const SneakerProvider = ({
                         colorArray.push(product);
                     }
                 })
+                setSneakers(colorArray);
 
                 setSneakersMobile(colorArray);
                 setSneakersCount(colorArray.length)
 
+            }
+
+            if (colorValues.every(x => x !== true)) {
+                colorArray = brandArray;
+                return colorArray;
             }
         })
 
@@ -162,10 +172,15 @@ export const SneakerProvider = ({
                         genderArray.push(product);
                     }
                 })
+                setSneakers(genderArray);
 
                 setSneakersMobile(genderArray);
                 setSneakersCount(genderArray.length)
 
+            }
+            if (genderValues.every(x => x !== true)) {
+                genderArray = colorArray;
+                return genderArray;
             }
         })
 
@@ -177,10 +192,15 @@ export const SneakerProvider = ({
                     }
                 })
 
+                setSneakers(sizeArray);
 
                 setSneakersMobile(sizeArray);
                 setSneakersCount(sizeArray.length)
 
+            }
+            if (sizeValues.every(x => x !== true)) {
+                sizeArray = genderArray;
+                return sizeArray;
             }
         })
 
@@ -228,12 +248,15 @@ export const SneakerProvider = ({
 
     const likeProduct = (productName) => {
         alert(`You liked ${productName}!`);
-        setLikedProducts((state) => [...state, productName])
+        setLikedSneakers(productName);
+
     }
 
     const unlikeProduct = (productName) => {
         alert(`You unliked ${productName}!`);
-        setLikedProducts((state) => state.filter(x => x !== productName))
+        const filteredProducts = likedSneakers.filter(product => product !== productName);
+
+        setLikedSneakers(productName, filteredProducts);
     }
 
     const addToCart = (productName) => {
@@ -271,7 +294,7 @@ export const SneakerProvider = ({
         likeProduct,
         unlikeProduct,
         addToCart,
-        likedProducts,
+        likedSneakers,
         onResetFiltersClick,
         onApplyFiltersClick
     }

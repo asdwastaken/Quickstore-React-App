@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 
 export const shortsContext = createContext();
@@ -15,7 +16,7 @@ export const ShortsProvider = ({
     const [loadedMore, setLoadedMore] = useState(20);
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
-    const [likedProducts, setLikedProducts] = useState([]);
+    const [likedShorts, setLikedShorts] = useLocalStorage('likedShorts', []);
 
 
 
@@ -246,12 +247,14 @@ export const ShortsProvider = ({
 
     const likeProduct = (brand, model, productId) => {
         alert(`You liked ${brand} ${model}!`);
-        setLikedProducts((state) => [...state, productId])
+        setLikedShorts(productId);
     }
 
     const unlikeProduct = (brand, model, productId) => {
         alert(`You unliked ${brand} ${model}!`);
-        setLikedProducts((state) => state.filter(x => x !== productId))
+        const filteredProducts = likedShorts.filter(product => product !== productId);
+
+        setLikedShorts(productId, filteredProducts);
     }
 
     const addToCart = (brand, model, productId) => {
@@ -290,7 +293,7 @@ export const ShortsProvider = ({
         likeProduct,
         unlikeProduct,
         addToCart,
-        likedProducts,
+        likedShorts,
         onResetFiltersClick,
         onApplyFiltersClick
     }
