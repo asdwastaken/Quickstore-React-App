@@ -46,6 +46,11 @@
 
 .user-icon {
     position: absolute;
+    right: 60px;
+}
+
+.cart-icon{
+    position: absolute;
     right: 20px;
 }
 
@@ -63,7 +68,12 @@
     }
 
     .user-icon {
+        right: 100px;
+    }
+
+    .cart-icon{
         right: 60px;
+        top: 15px;
     }
 
     .nav-links-container{
