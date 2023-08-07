@@ -1,6 +1,7 @@
 import './shortsComp.css';
 
-
+import nikeShortsBlue from '../../images/nike-shorts-blue.png';
+import nikeShortsYellow from '../../images/nike-shorts-yellow.png';
 import { getAll } from '../../services/shortsServices/shortsService';
 import { useEffect, useContext } from 'react';
 import { shortsContext } from '../../context/shortsContext';
@@ -43,10 +44,10 @@ export default function ShortsComp() {
             <div className="home-shorts-container">
                 <div className="home-shorts-images-header">
                     <div className="home-shorts-image-container">
-                        <img  className="home-image-shorts" />
+                        <img src={nikeShortsBlue} className="home-image-shorts"/>
                     </div>
                     <div className="home-shorts-image-container">
-                        <img  className="home-image-shorts" />
+                        <img src={nikeShortsYellow} className="home-image-shorts" />
 
                     </div>
                 </div>

@@ -14,16 +14,15 @@
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(53deg, rgba(248,117,65,1) 20%, rgba(180,179,174,1) 70%);
+    background: linear-gradient(53deg, #F3F3F3 55%, #F2F2F2 85%);
     z-index: 2;
 }
-
 
 
 .home-image-shorts {
     object-fit: scale-down;
     width: 400px;
-    height: 250px;
+    height: 270px;
     position: relative;
     z-index: 2;
 
@@ -31,10 +30,9 @@
 
 .home-shorts-image-container {
     height: 300px;
-    width: 280px;
+    width: 250px;
     display: flex;
     justify-content: center;
-    padding-top: 15px;
     z-index: 0;
 }
 
@@ -777,9 +775,7 @@
 
 @media screen and (max-width:520px) {
 
-    .home-shorts-image-container{
-        padding-top: 10px;
-    }
+  
 
     .home-image-shorts {
         width: 225px;
@@ -797,7 +793,6 @@
 @media screen and (max-width:450px) {
 
     .home-shorts-image-container{
-        padding-top: 5px;
         width: 130px;
     }
     .home-image-shorts {
