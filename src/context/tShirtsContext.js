@@ -17,6 +17,8 @@ export const TshirtProvider = ({
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
     const [likedTShirts, setLikedTShirts] = useLocalStorage('likedTShirts', []);
+    const [cartTShirts, setCartTShirts] = useLocalStorage('cartTShirts', []);
+
 
 
 
@@ -248,6 +250,7 @@ export const TshirtProvider = ({
 
     const addToCart = (brand, model, productId) => {
         alert(`${brand} ${model} has been added to your cart!`)
+        setCartTShirts(productId);
     }
 
 
@@ -282,6 +285,7 @@ export const TshirtProvider = ({
         unlikeProduct,
         addToCart,
         likedTShirts,
+        cartTShirts,
         onResetFiltersClick,
         onApplyFiltersClick
     }

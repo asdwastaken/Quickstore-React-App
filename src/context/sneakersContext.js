@@ -17,6 +17,7 @@ export const SneakerProvider = ({
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
     const [likedSneakers, setLikedSneakers] = useLocalStorage('likedSneakers', []);
+    const [cartSneakers, setCartSneakers] = useLocalStorage('cartSneakers', []);
 
 
 
@@ -249,7 +250,6 @@ export const SneakerProvider = ({
     const likeProduct = (productName) => {
         alert(`You liked ${productName}!`);
         setLikedSneakers(productName);
-
     }
 
     const unlikeProduct = (productName) => {
@@ -261,6 +261,7 @@ export const SneakerProvider = ({
 
     const addToCart = (productName) => {
         alert(`${productName} has been added to your cart!`)
+        setCartSneakers(productName);
     }
 
 
@@ -295,6 +296,7 @@ export const SneakerProvider = ({
         unlikeProduct,
         addToCart,
         likedSneakers,
+        cartSneakers,
         onResetFiltersClick,
         onApplyFiltersClick
     }

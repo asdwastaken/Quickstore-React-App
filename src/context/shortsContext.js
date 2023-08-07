@@ -17,6 +17,8 @@ export const ShortsProvider = ({
     const [loadedMoreMobile, setLoadedMoreMobile] = useState(5);
     const [selectedOption, setSelectedOption] = useState('');
     const [likedShorts, setLikedShorts] = useLocalStorage('likedShorts', []);
+    const [cartShorts, setCartShorts] = useLocalStorage('cartShorts', []);
+
 
 
 
@@ -259,6 +261,7 @@ export const ShortsProvider = ({
 
     const addToCart = (brand, model, productId) => {
         alert(`${brand} ${model} has been added to your cart!`)
+        setCartShorts(productId);
     }
 
 
@@ -294,6 +297,7 @@ export const ShortsProvider = ({
         unlikeProduct,
         addToCart,
         likedShorts,
+        cartShorts,
         onResetFiltersClick,
         onApplyFiltersClick
     }
