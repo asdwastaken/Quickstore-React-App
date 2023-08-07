@@ -2,12 +2,12 @@ import { useState } from "react"
 
 export const useLocalStorage = (key, initialValue) => {
 
-    const products = localStorage.getItem(key);
+    const storedProducts = localStorage.getItem(key);
 
-    const [likedProducts, setLikedProducts] = useState(() => {
+    const [products, setProducts] = useState(() => {
 
-        if (products) {
-            const serializedProducts = JSON.parse(products);
+        if (storedProducts) {
+            const serializedProducts = JSON.parse(storedProducts);
             return serializedProducts;
         }
 
@@ -19,11 +19,11 @@ export const useLocalStorage = (key, initialValue) => {
 
         if (filteredProducts) {
             localStorage.setItem(key, JSON.stringify(filteredProducts));
-            setLikedProducts(filteredProducts);
+            setProducts(filteredProducts);
         } else {
-            const updatedLikedProducts = [...likedProducts, productName];
-            localStorage.setItem(key, JSON.stringify(updatedLikedProducts));
-            setLikedProducts(updatedLikedProducts);
+            const updatedProducts = [...products, productName];
+            localStorage.setItem(key, JSON.stringify(updatedProducts));
+            setProducts(updatedProducts);
 
         }
 
@@ -32,7 +32,7 @@ export const useLocalStorage = (key, initialValue) => {
     }
 
     return ([
-        likedProducts,
+        products,
         setLocalStorage,
     ])
 }
