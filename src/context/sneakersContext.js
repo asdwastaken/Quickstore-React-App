@@ -39,7 +39,6 @@ export const SneakerProvider = ({
         Green: false,
         White: false,
         Pink: false,
-
     })
 
     const [sneakersGenderValues, setSneakersGenderValues] = useState({

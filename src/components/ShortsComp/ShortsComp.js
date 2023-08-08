@@ -9,6 +9,7 @@ import ShortsMenus from './ShortsMenus';
 import ShortsProductsGrid from './ShortsProductsGrid';
 import ShortsProductsGridMobile from './ShortsProductsGridMobile';
 import { productRowsFormatter } from '../../functions/productRowsFormatter';
+import Footer from '../Footer/Footer';
 
 export default function ShortsComp() {
 
@@ -44,7 +45,7 @@ export default function ShortsComp() {
             <div className="home-shorts-container">
                 <div className="home-shorts-images-header">
                     <div className="home-shorts-image-container">
-                        <img src={nikeShortsBlue} className="home-image-shorts"/>
+                        <img src={nikeShortsBlue} className="home-image-shorts" />
                     </div>
                     <div className="home-shorts-image-container">
                         <img src={nikeShortsYellow} className="home-image-shorts" />
@@ -78,7 +79,9 @@ export default function ShortsComp() {
                     </button>
                 </div>
 
+
             </div >
+            <Footer />
         </div >
     )
 }

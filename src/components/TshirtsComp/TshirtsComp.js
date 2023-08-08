@@ -9,6 +9,7 @@ import TshirtsMenus from './TshirtsMenus';
 import TshirtsProductsGrid from './TshirtsProductsGrid';
 import TshirtsProductsGridMobile from './TshirtsProductsGridMobile';
 import { productRowsFormatter } from '../../functions/productRowsFormatter';
+import Footer from '../Footer/Footer';
 
 export default function TshirtsComp() {
 
@@ -79,6 +80,7 @@ export default function TshirtsComp() {
                 </div>
 
             </div >
+            <Footer />
         </div >
     )
 }
