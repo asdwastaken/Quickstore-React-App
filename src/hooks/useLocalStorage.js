@@ -15,16 +15,15 @@ export const useLocalStorage = (key, initialValue) => {
     })
 
 
-    const setLocalStorage = (productName, filteredProducts) => {
+    const setLocalStorage = (product, filteredProducts) => {
 
         if (filteredProducts) {
             localStorage.setItem(key, JSON.stringify(filteredProducts));
             setProducts(filteredProducts);
         } else {
-            const updatedProducts = [...products, productName];
+            const updatedProducts = [...products, product];
             localStorage.setItem(key, JSON.stringify(updatedProducts));
             setProducts(updatedProducts);
-
         }
 
 

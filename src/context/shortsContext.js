@@ -279,11 +279,11 @@ export const ShortsProvider = ({
         setLikedShorts(productName, filteredProducts);
     }
 
-    const addToCart = (brand, model) => {
-        const productName = brand + ' ' + model;
+    const addToCart = (product) => {
+        const productName = product.brand_name + ' ' + product.model;
 
-        alert(`${brand} ${model} has been added to your cart!`)
-        setCartShorts(productName);
+        alert(`${productName} has been added to your cart!`)
+        setCartShorts(product);
     }
 
 

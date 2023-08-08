@@ -265,9 +265,9 @@ export const SneakerProvider = ({
         setLikedSneakers(productName, filteredProducts);
     }
 
-    const addToCart = (productName) => {
-        alert(`${productName} has been added to your cart!`)
-        setCartSneakers(productName);
+    const addToCart = (product) => {
+        alert(`${product.name} has been added to your cart!`)
+        setCartSneakers(product);
     }
 
 

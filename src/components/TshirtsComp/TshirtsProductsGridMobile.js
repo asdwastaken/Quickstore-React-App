@@ -29,12 +29,12 @@ export default function TshirtsProductsGrid() {
                             <h4 className="card-brand">{x.brand_name}</h4>
                             <h5 className="card-title">{x.model}</h5>
                             {x.discounted_price
-                                ? <p className="card-price">Price: <span id="old-price">${priceFormatter(x.price)}</span> ${discountPriceFormatter(x.price)} </p>
+                                ? <p className="card-price">Price: <span id="old-price">${priceFormatter(x.price).toFixed(2)}</span> ${discountPriceFormatter(x.price).toFixed(2)} </p>
 
-                                : <p className="card-price">Price: ${x.price / 100}</p>
+                                : <p className="card-price">Price: ${x.price / 100}.toFixed(2)</p>
                             }
                         </div>
-                        <a className="add-btn" onClick={() => addToCart(x.brand_name, x.model)}>Add To Cart</a>
+                        <a className="add-btn" onClick={() => addToCart(x)}>Add To Cart</a>
                     </div>
                 )
             }

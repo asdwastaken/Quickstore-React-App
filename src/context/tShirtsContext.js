@@ -263,11 +263,11 @@ export const TshirtProvider = ({
         setLikedTShirts(productName, filteredProducts);
     }
 
-    const addToCart = (brand, model) => {
-        const productName = brand + ' ' + model;
+    const addToCart = (product) => {
+        const productName = product.brand_name + ' ' + product.model;
 
-        alert(`${brand} ${model} has been added to your cart!`)
-        setCartTShirts(productName);
+        alert(`${productName} has been added to your cart!`)
+        setCartTShirts(product);
     }
 
 
