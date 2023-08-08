@@ -1,5 +1,5 @@
 import './cart.css';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { sneakerContext } from '../../context/sneakersContext';
 import { tShirtsContext } from '../../context/tShirtsContext';
@@ -9,13 +9,19 @@ import Footer from '../Footer/Footer';
 
 export default function Cart() {
 
+    const { cartSneakers, setCartSneakers } = useContext(sneakerContext);
+    const { cartTShirts, setCartTShirts } = useContext(tShirtsContext);
+    const { cartShorts, setCartShorts } = useContext(shortsContext);
+
     const [hovered, setHovered] = useState(false);
+    const [cartArray, setCartArray] = useState([]);
 
-    const { cartSneakers } = useContext(sneakerContext);
-    const { cartTShirts } = useContext(tShirtsContext);
-    const { cartShorts } = useContext(shortsContext);
+    useEffect(() => {
+        setCartArray(cartSneakers.concat(cartTShirts).concat(cartShorts))
+    }, [])
 
-    const cartArray = cartSneakers.concat(cartTShirts).concat(cartShorts);
+
+
     let totalPrice = 0;
 
     cartArray.forEach(x => {
@@ -31,6 +37,19 @@ export default function Cart() {
     }
 
 
+    const removeProduct = (productId) => {
+        const filteredCartArray = cartArray.filter(x => x.id !== productId);
+        const filteredCartSneakers = cartSneakers.filter(x => x.id !== productId);
+        const filteredCartTShirts = cartTShirts.filter(x => x.id !== productId);
+        const filteredCartShorts = cartShorts.filter(x => x.id !== productId);
+
+
+        setCartArray(filteredCartArray);
+        setCartSneakers(productId, filteredCartSneakers);
+        setCartTShirts(productId, filteredCartTShirts);
+        setCartShorts(productId, filteredCartShorts);
+    }
+
     return (
         <div className="cart">
             <div className="cart-container">
@@ -39,7 +58,11 @@ export default function Cart() {
                         <h4 className="cart-products-heading">Products:</h4>
                         {cartArray.map((x, index) => {
                             return (
-                                <span key={x.id} className="cart-product">{index + 1}. {x.name || x.brand_name + ' ' + x.model} - ${x.discounted_price ? discountPriceFormatter(x.price).toFixed(2) : priceFormatter(x.price).toFixed(2)}</span>
+                                <div className="cart-product-container">
+                                    <span key={x.id} className="cart-product">{index + 1}. {x.name || x.brand_name + ' ' + x.model}</span>
+                                    <span className="cart-product-price">${x.discounted_price ? discountPriceFormatter(x.price).toFixed(2) : priceFormatter(x.price).toFixed(2)}</span>
+                                    <span className="remove-product-btn" onClick={() => removeProduct(x.id)}>x</span>
+                                </div>
                             )
                         })}
                         <span className="total-price">Total: ${totalPrice.toFixed(2)}</span>

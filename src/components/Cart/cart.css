@@ -26,6 +26,35 @@
     padding: 20px;
 }
 
+.cart-product-container {
+    width: 700px;
+    position: relative;
+    display: flex;
+    align-items: start;
+}
+
+.cart-product {
+    margin-bottom: 10px;
+    width: 500px;
+    word-break: normal;
+}
+
+.cart-product-price {
+    position: absolute;
+    left: 500px;
+}
+
+.remove-product-btn {
+    position: absolute;
+    left: 600px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.remove-product-btn:hover {
+    color: red;
+}
+
 .cart-go-back-link {
     text-decoration: none;
     color: rgb(50, 50, 50);
@@ -73,9 +102,7 @@
     margin-bottom: 20px;
 }
 
-.cart-product {
-    margin-bottom: 10px;
-}
+
 
 .total-price {
     font-weight: 600;

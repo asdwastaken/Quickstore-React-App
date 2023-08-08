@@ -320,6 +320,7 @@ export const ShortsProvider = ({
         addToCart,
         likedShorts,
         cartShorts,
+        setCartShorts,
         onResetFiltersClick,
         onApplyFiltersClick
     }

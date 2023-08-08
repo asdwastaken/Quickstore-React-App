@@ -303,6 +303,7 @@ export const SneakerProvider = ({
         addToCart,
         likedSneakers,
         cartSneakers,
+        setCartSneakers,
         onResetFiltersClick,
         onApplyFiltersClick
     }
