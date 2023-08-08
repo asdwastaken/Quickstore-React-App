@@ -333,7 +333,7 @@
         font-size: 14px;
         padding: 2px 7px 2px 7px;
         height: 32px;
-        width: 100px;
+        width: 120px;
         left: 206px;
     }
 
@@ -348,46 +348,46 @@
 
 @media screen and (max-width:400px) {
     .cart-form-container {
-        width: 300px;
+        width: 280px;
     }
 
     .cart-product-container {
-        width: 300px;
+        width: 280px;
     }
 
     .cart-product {
-        width: 150px;
+        width: 130px;
     }
 
     .cart-product-price {
-        left: 160px;
+        left: 140px;
     }
 
     .remove-product-btn {
-        left: 240px;
+        left: 220px;
     }
 
     .total-price {
-        width: 250px;
+        width: 240px;
     }
 
     .cart-go-back-link {
         font-size: 12px;
-        padding: 2px 7px 2px 7px;
+        padding: 2px 6px 2px 6px;
     }
 
     .checkout-btn {
         font-size: 14px;
         padding: 2px 7px 2px 7px;
-        height: 32px;
-        width: 100px;
+        height: 26px;
+        width: 90px;
         left: 186px;
     }
 
     .cart-back-arrow-hovered,
     .cart-back-arrow {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
 
 }
