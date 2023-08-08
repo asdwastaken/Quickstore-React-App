@@ -123,8 +123,12 @@ export const TshirtProvider = ({
         let genderArray = [];
         let sizeArray = [];
 
-        const brandEntries = Object.entries(tShirtsBrandValues);
         const brandValues = Object.values(tShirtsBrandValues);
+        const colorValues = Object.values(tShirtsColorValues);
+        const genderValues = Object.values(tShirtsGenderValues);
+        const sizeValues = Object.values(tShirtsSizeValues);
+
+        const brandEntries = Object.entries(tShirtsBrandValues);
         const colorEntries = Object.entries(tShirtsColorValues);
         const genderEntries = Object.entries(tShirtsGenderValues);
         const sizeEntries = Object.entries(tShirtsSizeValues);
@@ -156,43 +160,52 @@ export const TshirtProvider = ({
                     }
                 })
                 setTshirts(colorArray);
-
                 setTshirtsMobile(colorArray);
                 setTshirtsCount(colorArray.length)
 
+            }
+            if (colorValues.every(x => x !== true)) {
+                colorArray = brandArray;
+                return colorArray;
             }
         })
 
         genderEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                colorArray.map(product => {
                     if (product.gender.includes(x[0])) {
                         genderArray.push(product);
                     }
                 })
                 setTshirts(genderArray);
-
                 setTshirtsMobile(genderArray);
                 setTshirtsCount(genderArray.length)
 
+            }
+            if (genderValues.every(x => x !== true)) {
+                genderArray = colorArray;
+                return genderArray;
             }
         })
 
         sizeEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                genderArray.map(product => {
                     if (product.size_range.includes(Number(x[0]))) {
                         sizeArray.push(product);
                     }
                 })
 
                 setTshirts(sizeArray);
-
                 setTshirtsMobile(sizeArray);
                 setTshirtsCount(sizeArray.length)
 
             }
         })
+        if (sizeValues.every(x => x !== true)) {
+            sizeArray = genderArray;
+            return sizeArray;
+        }
 
     }
 

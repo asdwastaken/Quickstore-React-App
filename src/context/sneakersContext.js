@@ -132,6 +132,7 @@ export const SneakerProvider = ({
                     if (product.brand_name === x[0]) {
                         brandArray.push(product);
                     }
+                
                 })
 
                 setSneakers(brandArray);
@@ -153,8 +154,8 @@ export const SneakerProvider = ({
                         colorArray.push(product);
                     }
                 })
-                setSneakers(colorArray);
 
+                setSneakers(colorArray);
                 setSneakersMobile(colorArray);
                 setSneakersCount(colorArray.length)
 
@@ -164,11 +165,13 @@ export const SneakerProvider = ({
                 colorArray = brandArray;
                 return colorArray;
             }
+
         })
+
 
         genderEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                colorArray.map(product => {
                     if (product.gender.includes(x[0])) {
                         genderArray.push(product);
                     }
@@ -187,7 +190,7 @@ export const SneakerProvider = ({
 
         sizeEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                genderArray.map(product => {
                     if (product.size_range.includes(Number(x[0]))) {
                         sizeArray.push(product);
                     }

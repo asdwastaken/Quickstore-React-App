@@ -136,8 +136,12 @@ export const ShortsProvider = ({
         let genderArray = [];
         let sizeArray = [];
 
-        const brandEntries = Object.entries(shortsBrandValues);
         const brandValues = Object.values(shortsBrandValues);
+        const colorValues = Object.values(shortsColorValues);
+        const genderValues = Object.values(shortsGenderValues);
+        const sizeValues = Object.values(shortsSizeValues);
+
+        const brandEntries = Object.entries(shortsBrandValues);
         const colorEntries = Object.entries(shortsColorValues);
         const genderEntries = Object.entries(shortsGenderValues);
         const sizeEntries = Object.entries(shortsSizeValues);
@@ -174,11 +178,15 @@ export const ShortsProvider = ({
                 setShortsCount(colorArray.length)
 
             }
+            if (colorValues.every(x => x !== true)) {
+                colorArray = brandArray;
+                return colorArray;
+            }
         })
 
         genderEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                colorArray.map(product => {
                     if (product.gender.includes(x[0])) {
                         genderArray.push(product);
                     }
@@ -188,11 +196,15 @@ export const ShortsProvider = ({
                 setShortsCount(genderArray.length)
 
             }
+            if (genderValues.every(x => x !== true)) {
+                genderArray = colorArray;
+                return genderArray;
+            }
         })
 
         sizeEntries.forEach(x => {
             if (x[1] === true) {
-                brandArray.map(product => {
+                genderArray.map(product => {
                     if (product.size_range.includes(Number(x[0]))) {
                         sizeArray.push(product);
                     }
@@ -202,6 +214,10 @@ export const ShortsProvider = ({
                 setShortsMobile(sizeArray);
                 setShortsCount(sizeArray.length)
 
+            }
+            if (sizeValues.every(x => x !== true)) {
+                sizeArray = genderArray;
+                return sizeArray;
             }
         })
 
