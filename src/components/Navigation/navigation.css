@@ -103,7 +103,8 @@
         right: 100px;
     }
 
-    .cart-icon-container {
+    .cart-icon-container,
+    .empty-cart-icon-container {
         right: 60px;
         top: 15px;
     }
