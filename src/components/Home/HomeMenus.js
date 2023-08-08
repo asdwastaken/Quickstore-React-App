@@ -115,6 +115,12 @@ export default function HomeMenus() {
                                             White
                                         </label>
                                     </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" checked={sneakersColorValues.Pink} value={sneakersColorValues.Pink} onChange={onColorChangeHandler} name="Pink" />
+                                        <label className="form-check-label" htmlFor="Pink">
+                                            Pink
+                                        </label>
+                                    </div>
                                 </ul>
                             </li>
 

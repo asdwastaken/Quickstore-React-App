@@ -37,6 +37,9 @@ export const SneakerProvider = ({
         Black: false,
         Yellow: false,
         Green: false,
+        White: false,
+        Pink: false,
+
     })
 
     const [sneakersGenderValues, setSneakersGenderValues] = useState({
@@ -90,6 +93,7 @@ export const SneakerProvider = ({
             Yellow: false,
             Green: false,
             White: false,
+            Pink: false,
         })
 
         setSneakersGenderValues({
@@ -132,7 +136,7 @@ export const SneakerProvider = ({
                     if (product.brand_name === x[0]) {
                         brandArray.push(product);
                     }
-                
+
                 })
 
                 setSneakers(brandArray);
