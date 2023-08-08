@@ -249,21 +249,25 @@ export const TshirtProvider = ({
 
 
 
-    const likeProduct = (brand, model, productId) => {
+    const likeProduct = (brand, model) => {
+        const productName = brand + ' ' + model;
         alert(`You liked ${brand} ${model}!`);
-        setLikedTShirts(productId);
+        setLikedTShirts(productName);
     }
 
-    const unlikeProduct = (brand, model, productId) => {
+    const unlikeProduct = (brand, model) => {
+        const productName = brand + ' ' + model;
+
         alert(`You unliked ${brand} ${model}!`);
-        const filteredProducts = likedTShirts.filter(product => product !== productId);
-
-        setLikedTShirts(productId, filteredProducts);
+        const filteredProducts = likedTShirts.filter(product => product !== productName);
+        setLikedTShirts(productName, filteredProducts);
     }
 
-    const addToCart = (brand, model, productId) => {
+    const addToCart = (brand, model) => {
+        const productName = brand + ' ' + model;
+
         alert(`${brand} ${model} has been added to your cart!`)
-        setCartTShirts(productId);
+        setCartTShirts(productName);
     }
 
 

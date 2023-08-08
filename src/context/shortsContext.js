@@ -263,21 +263,27 @@ export const ShortsProvider = ({
 
 
 
-    const likeProduct = (brand, model, productId) => {
+    const likeProduct = (brand, model) => {
+        const productName = brand + ' ' + model;
+
         alert(`You liked ${brand} ${model}!`);
-        setLikedShorts(productId);
+        setLikedShorts(productName);
     }
 
-    const unlikeProduct = (brand, model, productId) => {
+    const unlikeProduct = (brand, model) => {
+        const productName = brand + ' ' + model;
+
         alert(`You unliked ${brand} ${model}!`);
-        const filteredProducts = likedShorts.filter(product => product !== productId);
+        const filteredProducts = likedShorts.filter(product => product !== productName);
 
-        setLikedShorts(productId, filteredProducts);
+        setLikedShorts(productName, filteredProducts);
     }
 
-    const addToCart = (brand, model, productId) => {
+    const addToCart = (brand, model) => {
+        const productName = brand + ' ' + model;
+
         alert(`${brand} ${model} has been added to your cart!`)
-        setCartShorts(productId);
+        setCartShorts(productName);
     }
 
 
