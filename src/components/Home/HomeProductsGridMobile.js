@@ -30,7 +30,7 @@ export default function HomeProductsGrid() {
                             <h5 className="card-title">{x.name}</h5>
                             {x.discounted_price
                                 ? <p className="card-price">Price: <span id="old-price">${priceFormatter(x.price).toFixed(2)}</span> ${discountPriceFormatter(x.price).toFixed(2)} </p>
-                                : <p className="card-price">Price: ${x.price / 100}.toFixed(2)</p>
+                                : <p className="card-price">Price: ${(x.price / 100).toFixed(2)}</p>
                             }
                         </div>
                         <a className="add-btn" onClick={() => addToCart(x)}>Add To Cart</a>
