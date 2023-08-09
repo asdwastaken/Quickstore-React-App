@@ -22,4 +22,5 @@ Implemented functionalities:
 - Close feature for the mobile navigation menu (on click, the user is redirected to the respective page and the menu is closed)
 
 
-
+One of the challenges I faced building this app was the filtering feature.
+Currently, when the user filters any products, all matches are displayed instead of just 20 for desktop and 5 for mobile.
